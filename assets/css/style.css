@@ -107,42 +107,59 @@ header {
     align-items: center;
 }
 
-.home_container h1 {
+.home_left h1 {
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.home_container h2 {
+.home_left h2 {
     font-size: 1.4rem;
     font-weight: 500;
 }
 
-.home_container .name_title {
+.home_left .name_title {
     font-size: 2.1rem;
     font-weight: 600;
 }
 
-.home_container .profession_title {
+.home_left .profession_title {
     font-size: 1.4rem;
     color: #6672f7;
 }
 
-.home_container a {
+.home_left .cv {
     font-size: 1.4rem;
     font-weight: 500;
     color: #fff;
     background-color: #001b94;
     box-shadow:  0px 10px 40px -12px #001b94;
     padding: 0.5rem;
-    margin-top: 0.9rem;
+    margin-top: 1rem;
     border-radius: 0.4rem;
     transition: 0.5s ease;
 }
 
-.home_container a:hover {
+.home_left .cv:hover {
     background-color: #01156e;
     color: #dfdede;
     box-shadow:  0px 10px 40px -12px #01156e;
+}
+
+.social_media {
+    margin-top: 1.7rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 12%;
+}
+
+.social_media a {
+    color: white;
+    box-shadow: 0px 10px 40px -12px #ffffff;
+    transition: .3s;
+}
+
+.social_media a:hover {
+    color: #1f44e9c1;
 }
 
 .home_right {
