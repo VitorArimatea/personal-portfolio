@@ -18,19 +18,35 @@
 <body>
     <header>
         <nav class="navbar">
+            
             <div class="owner">
                 <a href="#">Vítor Arimatéa</a>
             </div>
-                <ul class="menu">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                     <li><a href="#skills">Conhecimentos</a></li>
-                    <li><a href="#projects">Projetos</a></li>
+
+            <div class="nav_list">
+                <ul>
+                    <li class="nav_item"><a href="#home">Início</a></li>
+                    <li class="nav_item"><a href="#about">Sobre</a></li>
+                    <li class="nav_item"><a href="#skills">Conhecimentos</a></li>
+                    <li class="nav_item"><a href="#projects">Projetos</a></li>
                 </ul>
-                <div class="btn_menu">
-                    <i class="ph-list-light"></i>
-                </div>
+            </div>
+
+            <div class="btn_list">
+                <button><a onclick="showList()"><i class="ph-list-light"></i></a></button>
+            </div>
+
         </nav>
+
+        <div class="mobile_nav_list">
+            <ul>
+                <li><a class="nav_item" href="#home">Início</a></li>
+                <li><a class="nav_item" href="#about">Sobre</a></li>
+                <li><a class="nav_item" href="#skills">Conhecimentos</a></li>
+                <li><a class="nav_item" href="#projects">Projetos</a></li>
+            </ul>
+        </div>
+        
     </header>
     <main>
 

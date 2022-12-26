@@ -12,3 +12,15 @@ function writerEffect(element, delay = 0) {
 }
 
 writerEffect(document.getElementById('profession_title'));
+
+// Menu mobile
+
+function showList() {
+  let mobileNavList = document.querySelector('.mobile_nav_list');
+  if (mobileNavList.classList.contains('show')) {
+    mobileNavList.classList.remove('show');
+  }
+  else {
+    mobileNavList.classList.add('show');
+  }
+}
