@@ -1,6 +1,3 @@
-
-/*--About--*/
-
 .about {
     height: 100vh;
     width: 100%;
@@ -52,4 +49,65 @@
     font-weight: 300;
     margin-bottom: 1.5rem;
     margin-top: 0.3rem;
+}
+
+/*--Responsive--*/
+
+@media (max-width: 1115px) {
+
+.about_right p {
+    font-size: 1rem;
+}
+
+}
+
+@media (max-width: 1061px) {
+
+.about {
+    padding: 3rem;
+}
+
+}
+
+@media (max-width: 975px) {
+.about p {
+    font-size: 0.9rem;
+}
+
+}
+
+@media (max-width: 909px) {
+
+.about {
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.about_left {
+    display: none;
+}
+
+.about_right {
+    width: 100%;
+    height: 100%;
+}
+
+.about_title {
+    font-size: 1.5rem;
+}
+
+.about_container p {
+    font-size: 1.3rem;
+}
+
+}
+
+
+@media (max-width: 712px) {
+
+.about p {
+    font-size: 1rem;
+}
+
 }

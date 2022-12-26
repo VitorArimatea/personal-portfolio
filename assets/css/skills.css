@@ -48,3 +48,36 @@
     width: 8.5rem;
     padding: 0.4rem;
 }
+
+/*--Responsive--*/
+
+@media (max-width: 495px) {
+
+.skills {
+    padding: 7rem;
+}
+
+.skills h1 {
+    font-size: 2rem;  
+}
+
+.skills_container {
+    height: 40%;
+}
+
+.skills_container_2 {
+    height: 40%;
+}
+
+.skills_images {
+    height: 5.5rem;
+    width: 6rem;
+    cursor: default;
+    transition: .3s;
+}
+
+.skills_images:hover {
+    padding: 0.6rem;
+}
+
+}
