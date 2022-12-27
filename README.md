@@ -1,14 +1,26 @@
-<h1 align="center">Meu portfólio pessoal</h1>
+<h1 align="center">Meu portfólio</h1>
 
-<p align="center">Atualmente em desenvolvimento...</p>
+<p align="center">Versão PC</p>
 
-## 🚀 Tecnologias
-Esse projeto está sendo desenvolvido utilizando as seguintes tecnologias: 
+  <img alt="Página inicial do meu portfólio" src=".github/preview.png" width="100%">
+
+<p align="center">Versão Mobile</p>  
+
+<p align="center">
+    <img alt="Página inicial do meu portfólio" src=".github/preview-mobile.png" width="45%">
+</p>
+
+#
+
+## Tecnologias
+<p>Para desenvolver esse projeto eu utilizei as seguintes tecnologias:</p> 
 
 - HTML, CSS e JavaScript
 
-## 💻 Projeto
+## Projeto
 
-Um lugarzinho com minha personalidade onde todos os meus projetos mais legais vão ficar guardados.
+<p>Um cantinho com minha personalidade. Onde minha história, realizações e todos os meus projetos mais legais irão ficar.</p>
 
-Confira o projeto acessando o link: https://vitorarimatea.github.io/personal-portfolio
+## Deploy
+
+Link para acessar o projeto: https://vitorarimatea.github.io/personal-portfolio
