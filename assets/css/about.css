@@ -3,33 +3,28 @@
     width: 100%;
     background-color: #1f1f1f;
     color: #fff;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .about_container {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about_title {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.6rem;
-    transition: .2s;
-}
-
 .about_left {
     width: 50%;
     height: 100%;
-    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about_animated_image {
     height: 80%;
     width: 80%;
-    margin-bottom: 7.2rem;
     transition: 0.5s;
 }
 
@@ -40,7 +35,17 @@
 .about_right {
     height: 100%;
     width: 50%;
-    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.6rem;
 }
 
 .about_right p {
@@ -103,11 +108,14 @@
 
 }
 
-
 @media (max-width: 712px) {
 
-.about p {
+.about_title {
     font-size: 1rem;
+}
+
+.about p {
+    font-size: 0.8rem;
 }
 
 }
