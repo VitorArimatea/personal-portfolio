@@ -13,7 +13,7 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 2.4rem;  
+    font-size: 1.8rem;  
 }
 
 .skills_container {
@@ -56,7 +56,7 @@
 }
 
 .skills h1 {
-    font-size: 2rem;  
+    font-size: 1.5rem;  
 }
 
 .skills_container {
@@ -76,6 +76,14 @@
 
 .skills_images:hover {
     padding: 0.6rem;
+}
+
+}
+
+@media (max-width: 382px) {
+
+.skills_images {
+    height: 4.5rem;
 }
 
 }
