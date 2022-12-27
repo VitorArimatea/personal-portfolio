@@ -114,11 +114,11 @@
     width: 100%;
 }
 
-.home_left > h1 {
+.home_left  h1 {
     text-align: center;
 }
 
-.home_left > h2 {
+.home_left h2 {
     text-align: center;
 }
 
@@ -130,22 +130,74 @@
 
 @media (max-width: 495px) {
 
-.home_left h1 {
-    font-size: 1.6rem;
+.home_left h2 {
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
-.home_left h2 {
-    font-size: 1rem;
-    font-weight: 500;
+.home_left .profession_title {
+    font-size: 1.2rem;
 }
+
+.home_left .name_title {
+    font-size: 1.8rem;
+}
+
+.social_media {
+    width: 17%;
+}
+
+}
+
+@media (max-width: 438px) {
 
 .home_left .name_title {
     font-size: 1.6rem;
 }
 
+.home_left .profession_title {
+    font-size: 1.1rem;
+}
+
+}
+
+@media (max-width: 399px) {
+
+.home_left .name_title {
+    font-size: 1.5rem;
+}
+
+.home_left .profession_title {
+    font-size: 1rem;
+
+}
+
+}
+
+@media (max-width: 380px) {
+
+.home_left h1 {
+    font-size: 1.5rem;
+}
+
+.home_left .name_title {
+    font-size: 1.3rem;
+}
+
+.home_left h2 {
+    font-size: 0.9rem;
+}
+
+.home_left .profession_title {
+    font-size: 0.9rem;
+}
+
+.home_left .cv {
+    font-size: 1.1rem;
+}
+
 .social_media {
-    width: 17%;
+    width: 20%;
 }
 
 }
