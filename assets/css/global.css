@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     border: none;
+    list-style: none;
     font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
     font-size: 17px;
@@ -38,29 +39,29 @@
     padding: 0.7rem;
 }
 
-.owner a {
+.owner span {
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
+    cursor: default;
 }
 
-.nav_list li {
-    list-style: none;
+.nav_item {
     display: inline-block;
     margin-left: 2.5rem;
 }
 
-.nav_list li a {
+.nav_item a {
     color: #fff;
     transition: 0.3s ease-in-out;
 }
 
-.nav_list li a:hover {
+.nav_item a:hover {
     color: #eee;
     box-shadow: 0 1px 0 0 #fff;
 }
 
-/*--Menu-Mobile--*/
+/*--Navbar-Mobile--*/
 
 .btn_list {
     display: none;
@@ -72,10 +73,6 @@
 
 .mobile_nav_list {
     display: none;
-    list-style: none;
-}
-
-.mobile_nav_list a {
     color: #fff;
 }
 
@@ -98,22 +95,35 @@
     cursor: pointer;
 }
 
-.mobile_nav_list ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 3rem;
+.mobile_nav_list {
+    display: block;
+    position: fixed;
+    margin-top: 2.95rem;
+    padding: 9rem 1rem 0 2rem;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    transition: 0.3s ease-in-out;
 }
 
-.mobile_nav_list .nav_item {
-    display: block;
-    padding-top: 4rem;
+.nav_item {
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+    margin-top: 2rem;
+}
+
+.nav_item:hover {
+    color: #eee;
+    box-shadow: 0 1px 0 0 #fff;
 }
 
 .show {
     display: block;
     position: fixed;
-    background-color: #001b94;
+    background-color: #1b1b1b;
+    right: -60%;
 }
 
 }
@@ -130,8 +140,6 @@ footer {
     background-color: #021466;
     color: white;
 }
-
-/*--Responsive--*/
 
 @media (max-width: 495px) {
 

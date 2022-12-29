@@ -22,5 +22,6 @@ function showList() {
   }
   else {
     mobileNavList.classList.add('show');
+    document.querySelector(".btn_list").scr = "assets/img/close_icon.svg";
   }
 }
