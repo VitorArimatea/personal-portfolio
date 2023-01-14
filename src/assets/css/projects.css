@@ -48,7 +48,7 @@
     transition: .3s ease-in-out;
 }
 
-.projects_cards img:hover {
+.projects_title:hover .projects_cards img{
     opacity: 0;
 }
 
@@ -58,7 +58,7 @@
     letter-spacing: 2px;
     cursor: default;
     z-index: 2;
-    background-color: #58585895;
+    background-color: #303030b1;
     transition: 0.3s ease-in-out;
 }
 
@@ -89,6 +89,7 @@
 .project_sources {
     display: flex;
     justify-content: center;
+    gap: 1rem;
     width: 100%;
     z-index: 2;
 }
@@ -99,7 +100,6 @@
     opacity: 0;
     color: #fff;
     cursor: pointer;
-    padding: 0.5rem;
     z-index: 2;
     transition: 0.3s ease-in-out;
 }
