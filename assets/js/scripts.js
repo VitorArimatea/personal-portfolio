@@ -11,17 +11,29 @@ function writerEffect(element, delay = 0) {
   delay
 }
 
-writerEffect(document.getElementById('profession_title'));
+const professionTitle = document.getElementById("profession_title")
+const text = "Desenvolvedor de Software"
+let index = 0
 
-// Menu mobile
-
-function showList() {
-  let mobileNavList = document.querySelector('.mobile_nav_list');
-  if (mobileNavList.classList.contains('show')) {
-    mobileNavList.classList.remove('show');
-  }
-  else {
-    mobileNavList.classList.add('show');
-    document.querySelector(".btn_list").scr = "assets/img/close_icon.svg";
-  }
+function typeWriter() {
+    if (index < text.length) {
+        professionTitle.innerHTML += text.charAt(index)
+        index++
+        setTimeout(typeWriter, 50)
+    } else {
+        cursorBlink()
+    }
 }
+
+function cursorBlink() {
+    professionTitle.innerHTML += "|"
+    setInterval(() => {
+        if (professionTitle.innerHTML.endsWith("|")) {
+            professionTitle.innerHTML = professionTitle.innerHTML.slice(0, -1)  
+        } else {
+            professionTitle.innerHTML += "|"
+        }
+    }, 600)
+}
+
+typeWriter()
