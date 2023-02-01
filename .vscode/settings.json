@@ -1,6 +1,7 @@
 {  
   // editor
   "editor.wordWrap": "on",
+  "editor.fontFamily": "Fira code",
   "editor.fontSize": 16,
   "editor.lineHeight": 21,
   "editor.tabSize": 4,
