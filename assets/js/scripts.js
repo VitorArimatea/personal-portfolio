@@ -11,7 +11,7 @@ function showList() {
 
 //Efeito de maquina de escrever
 
-const professionTitle = document.getElementById("profession_title")
+const professionTitle = document.querySelector(".profession_title")
 const text = "Desenvolvedor de Software"
 let index = 0
 
