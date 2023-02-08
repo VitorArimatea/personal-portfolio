@@ -57,142 +57,122 @@
 /*--Responsive--*/
 
 @media (max-width: 1115px) {
+    .about_title {
+        font-size: 1.3rem;
+    }
 
-.about_title {
-    font-size: 1.3rem;
-}
-
-.about_right p {
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
-}
-
+    .about_right p {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 1094px) {
+    .about_title {
+        font-size: 1.1rem;
+    }
 
-.about_title {
-    font-size: 1.1rem;
-}
+    .about_right p {
+        font-size: 0.7rem;
+    }
 
-.about_right p {
-    font-size: 0.7rem;
-}
-
-.about_animated_image{
-    height: 65%;
-}
-
+    .about_animated_image {
+        height: 65%;
+    }
 }
 
 @media (max-width: 909px) {
+    .about {
+        padding: 2.5rem;
+    }
 
-.about {
-    padding: 2.5rem;
-}
+    .about_left {
+        display: none;
+    }
 
-.about_left {
-    display: none;
-}
+    .about_right {
+        width: 100%;
+    }
 
-.about_right {
-    width: 100%;
-}
+    .about_title {
+        font-size: 1.4rem;
+    }
 
-.about_title {
-    font-size: 1.4rem;
-}
-
-.about_container p {
-    font-size: 1rem;
-}
-
+    .about_container p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 697px) {
+    .about_title {
+        font-size: 1.3rem;
+    }
 
-.about_title {
-    font-size: 1.3rem;
-}
-
-.about_container p {
-    font-size: 0.9rem;
-}
-
+    .about_container p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 590px) {
+    .about_title {
+        font-size: 1.2rem;
+    }
 
-.about_title {
-    font-size: 1.2rem;
-}
-
-.about_container p {
-    font-size: 0.8rem;
-}
-
+    .about_container p {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 469px) {
+    .about {
+        padding: 1rem;
+    }
 
-.about {
-    padding: 1rem;
-}
+    .about_title {
+        font-size: 1.1rem;
+    }
 
-.about_title {
-    font-size: 1.1rem;
-}
-
-.about_container p {
-    font-size: 0.7rem;
-}
-
+    .about_container p {
+        font-size: 0.7rem;
+    }
 }
 
 @media (max-width: 371px) {
+    .about_title {
+        font-size: 0.9rem;
+    }
 
-.about_title {
-    font-size: 0.9rem;
-}
-
-.about_container p {
-    font-size: 0.6rem;
-}
-
+    .about_container p {
+        font-size: 0.6rem;
+    }
 }
 
 @media (max-width: 309px) {
+    .about_title {
+        font-size: 0.7rem;
+    }
 
-.about_title {
-    font-size: 0.7rem;
-}
-
-.about_container p {
-    font-size: 0.5rem;
-}
-
+    .about_container p {
+        font-size: 0.5rem;
+    }
 }
 
 @media (max-width: 249px) {
+    .about {
+        padding: 0.5rem;
+    }
 
-.about {
-    padding: 0.5rem;
-}
-
-.about_title {
-    font-size: 0.6rem;
-}
-
+    .about_title {
+        font-size: 0.6rem;
+    }
 }
 
 @media (max-width: 202px) {
+    .about {
+        padding: 0.3rem;
+    }
 
-.about {
-    padding: 0.3rem;
-}
-
-.about_container p {
-    font-size: 0.42rem;
-}
-
+    .about_container p {
+        font-size: 0.42rem;
+    }
 }

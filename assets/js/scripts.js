@@ -1,4 +1,4 @@
-//Navbar mobile 
+//Navbar mobile
 function showList() {
     let mobileNavList = document.querySelector(".mobile_nav_list")
     if (mobileNavList.classList.contains("show")) {

@@ -1,89 +1,102 @@
 .skills {
     height: 100vh;
     width: 100%;
-    padding: 4.5rem;
     background-color: #1b1b1b;
     color: #fff;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.skills h1 {
-    text-align: center;
+.skills h2 {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 1.8rem;  
+    font-size: 1.8rem;
 }
 
 .skills_container {
-    height: 25%;
-    width: 70%;
+    margin-top: 4rem;
+    width: 80%;
     display: flex;
-    justify-content: center;
-    margin-top: 6rem;
-
+    justify-content: space-evenly;
 }
 
 .skills_container_2 {
-    height: 25%;
-    width: 70%;
-    display: flex;
-    justify-content: center;
     margin-top: 2rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .skills_images {
-    height: 7rem;
-    width: 8rem;
+    height: 9rem;
+    width: 10rem;
+    box-shadow: -2px 2px 3px #003afa73, -1px 10px 10px #0027837e;
+    border-radius: 1.5rem;
+    position: relative;
+    padding: 1rem;
     cursor: default;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 .skills_images:hover {
-    background-color: #02000f62;
-    border-radius: .5rem;
-    width: 8.5rem;
-    padding: 0.4rem;
+    background-color: #06060662;
+    box-shadow: inset 0px 1px 2px 4px #025afe51;
+    padding: 1.7rem;
 }
 
 /*--Responsive--*/
 
+@media (max-width: 1115px) {
+    .skills_images {
+    height: 8rem;
+    width: 8rem;
+}
+}  
+
+@media (max-width: 769px) {
+    .skills_images {
+    height: 7rem;
+    width: 7rem;
+}
+
+    .skills_images:hover {
+        padding: 1.7rem;
+    }
+}    
+
 @media (max-width: 495px) {
+    .skills {
+        padding: 7rem;
+    }
 
-.skills {
-    padding: 7rem;
-}
+    .skills h1 {
+        font-size: 1.5rem;
+    }
 
-.skills h1 {
-    font-size: 1.5rem;  
-}
+    .skills_container {
+        height: 40%;
+    }
 
-.skills_container {
-    height: 40%;
-}
+    .skills_container_2 {
+        height: 40%;
+    }
 
-.skills_container_2 {
-    height: 40%;
-}
+    .skills_images {
+        height: 5.5rem;
+        width: 6rem;
+        cursor: default;
+        transition: 0.3s;
+    }
 
-.skills_images {
-    height: 5.5rem;
-    width: 6rem;
-    cursor: default;
-    transition: .3s;
-}
-
-.skills_images:hover {
-    padding: 0.6rem;
-}
-
+    .skills_images:hover {
+        padding: 0.6rem;
+    }
 }
 
 @media (max-width: 382px) {
-
-.skills_images {
-    height: 4.5rem;
-}
-
+    .skills_images {
+        height: 4.5rem;
+    }
 }

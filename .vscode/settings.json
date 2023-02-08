@@ -1,36 +1,37 @@
-{  
-  // editor
-  "editor.wordWrap": "on",
-  "editor.fontFamily": "Fira code",
-  "editor.fontSize": 16,
-  "editor.lineHeight": 21,
-  "editor.tabSize": 4,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": true,
-  "editor.minimap.enabled": false,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
+{
+    // editor
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "Fira code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 21,
+    "editor.tabSize": 4,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
 
-  // explorer
-  "explorer.compactFolders": false,
+    // explorer
+    "explorer.compactFolders": false,
 
-  // workbench
-  "workbench.editor.enablePreview": false,
+    // workbench
+    "workbench.editor.enablePreview": false,
 
-  // prettier
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.enable": true,
-  "prettier.singleQuote": false,
-  "prettier.tabWidth": 4,
-  "prettier.semi": false,
+    // prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.enable": true,
+    "prettier.singleQuote": false,
+    "prettier.tabWidth": 4,
+    "prettier.semi": false,
 
-  // terminal
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.profiles.windows": {
-    "Git Bash": {
-      "source": "Git Bash"
-    }
-  },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "window.zoomLevel": 1.1
+    // terminal
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.profiles.windows": {
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "window.zoomLevel": 1
 }
