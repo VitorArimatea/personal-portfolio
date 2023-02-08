@@ -154,23 +154,35 @@ footer {
     justify-content: center;
     padding: 0.4rem;
     background-color: #021466;
-    color: white;
+}
+
+footer p {
+    cursor:default;
+    font-weight:200;
+}
+
+footer a {
+    font-weight: 500;
+}
+
+footer a,p {
+    color: #fff;
 }
 
 @media (max-width: 495px) {
-    footer p {
+    footer a p {
         font-size: 0.8rem;
     }
 }
 
 @media (max-width: 345px) {
-    footer p {
+    footer a p {
         font-size: 0.4rem;
     }
 }
 
 @media (max-width: 183px) {
-    footer p {
+    footer a p {
         font-size: 0.3rem;
     }
 }
