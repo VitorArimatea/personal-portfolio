@@ -205,6 +205,10 @@
     font-size: 0.82rem;
 }
 
+.projects_mobile {
+    display: none;
+}
+
 @media (max-width: 1115px) {
     .projects {
         padding: 2rem;
@@ -286,59 +290,109 @@
 }
 
 @media (max-width: 642px) {
+    .projects {
+        padding: 2.5rem 1rem 0 1rem;
+    }
+
+    .projects_container {
+        display: none;
+    }
+
+    .projects_mobile {
+        height: 100%;
+        width: 100%;
+        
+        display: grid;
+    }
+    .projects_cards {
+        margin-top: 2rem;
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+
     .projects_cards .project_title {
-        font-size: 0.7rem;
+        font-size: 1.2rem;
     }
 
     .projects_cards:hover .projects_content p {
-        font-size: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .projects_carousel {
+        display: flex;
+        position: relative;
     }
 
+    .carousel_buttons {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2.5rem;
+    }
+
+    .prev_button {
+        background: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .next_button {
+        background: none;
+        color: #fff;
+        cursor: pointer;
+    }
 }
 
-@media (max-width: 580px) {
-    .projects_container {
-        gap: 0.1rem;
-    }
-
+@media (max-width: 477px) {
     .projects_cards {
+        margin-top: 5rem;
         height: 80%;
-        width: 90%;
     }
 }
 
-@media (max-width: 537px) {
-    .projects_container {
-        gap: 0;
+@media (max-width: 417px) {
+    .projects_cards .project_title {
+        font-size: 1rem;
     }
 
+    .projects_cards:hover .projects_content p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 367px) {
+    
     .projects_cards {
         height: 70%;
     }
 
     .projects_cards .project_title {
-        font-size: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .carousel_buttons {
+        margin-top: 1rem;
     }
 }
 
-@media (max-width: 417px) {
-
-    .projects_cards .project_title {
-        font-size: 0.45rem;
-    }
-
-    .projects_cards:hover .projects_content p {
-        font-size: 0.35rem;
+@media (max-width: 367px) {
+    .projects {
+        padding: 2.5rem 0.1rem 0 0.1rem;
     }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 306px) {
+    .projects_cards {
+        height: 60%;
+    }
 
     .projects_cards .project_title {
-        font-size: 0.35rem;
+        font-size: 0.8rem;
     }
 
     .projects_cards:hover .projects_content p {
-        font-size: 0.35rem;
+        font-size: 0.6rem;
     }
 }
