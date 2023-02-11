@@ -157,32 +157,36 @@ footer {
 }
 
 footer p {
-    cursor:default;
-    font-weight:200;
+    cursor: default;
+    font-weight: 200;
 }
 
 footer a {
     font-weight: 500;
 }
 
-footer a,p {
+footer a,
+p {
     color: #fff;
 }
 
 @media (max-width: 495px) {
-    footer a p {
+    footer a,
+    p {
         font-size: 0.8rem;
     }
 }
 
 @media (max-width: 345px) {
-    footer a p {
+    footer a,
+    p {
         font-size: 0.4rem;
     }
 }
 
 @media (max-width: 183px) {
-    footer a p {
+    footer a,
+    p {
         font-size: 0.3rem;
     }
 }
