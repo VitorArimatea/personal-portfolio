@@ -54,11 +54,22 @@
 .nav_item a {
     color: #fff;
     transition: 0.3s ease-in-out;
+    position: relative;
 }
 
-.nav_item a:hover {
-    color: #eee;
-    box-shadow: 0 1px 0 0 #fff;
+.nav_item a::after {
+    content: "";
+    width: 0%;
+    height: 0.1rem;
+    background-color: #eee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.nav_item a:hover::after {
+    width: 100%;
 }
 
 /*-- Navbar-Mobile --*/
