@@ -5,7 +5,7 @@
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "editor.lineHeight": 21,
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
     "editor.minimap.enabled": false,
@@ -22,16 +22,16 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.enable": true,
     "prettier.singleQuote": false,
-    "prettier.tabWidth": 4,
+    "prettier.tabWidth": 2,
     "prettier.semi": false,
 
     // terminal
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 16,
     "terminal.integrated.profiles.windows": {
         "Git Bash": {
             "source": "Git Bash"
         }
     },
     "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1.1
 }
