@@ -1,70 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vítor Oliveira Arimatéa | Portfólio pessoal</title>
-        <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/v-favicon.ico" type="image/x-icon">
-        <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/about.css">
-    <link rel="stylesheet" href="assets/css/skills.css">
-    <link rel="stylesheet" href="assets/css/projects.css">
-        <!-- Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <script src="https://unpkg.com/phosphor-icons"></script>
-        <!-- JS -->
-    <script defer src="assets/js/scripts.js"></script>
-    <script defer src="assets/js/carousel.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vítor Oliveira Arimatéa | Portfólio pessoal</title>
+    <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/v-favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/skills.css">
+  <link rel="stylesheet" href="assets/css/projects.css">
+    <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- JS -->
+  <script defer src="assets/js/navbar.js"></script>
+  <script defer src="assets/js/carousel.js"></script>
 </head>
 <body>          
-    
-    <header>
-            
-        <nav class="navbar">
-            
-            <div class="owner">
-                <a href="#">Vítor Arimatéa</a>
-            </div>
-
-            <div class="nav_list">
-                <ul>
-                    <li class="nav_item"><a href="#home">Início</a></li>
-                    <li class="nav_item"><a href="#about">Sobre</a></li>
-                    <li class="nav_item"><a href="#skills">Conhecimentos</a></li>
-                    <li class="nav_item"><a href="#projects">Projetos</a></li>
-                </ul>
-            </div>
-
-            <div class="btn_list">
-                <button onclick="showList()"><i class="ph-list-light"></i></button>
-            </div>
-
-        </nav>
-
-    </header>
-
-    <div class="mobile_nav_list">
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1><a href="#">Vítor Arimatéa</a></h1>
+      </div>
+                                                            
+      <div class="nav_list">
         <ul>
-            <li><a class="nav_item" href="#home">Início</a></li>
-            <li><a class="nav_item" href="#about">Sobre</a></li>
-            <li><a class="nav_item" href="#skills">Conhecimentos</a></li>
-            <li><a class="nav_item" href="#projects">Projetos</a></li>
+          <li class="nav-item"><a href="#home">Início</a></li>
+          <li class="nav-item"><a href="#about">Sobre</a></li>
+          <li class="nav-item"><a href="#skills">Tecnologias</a></li>
+          <li class="nav-item"><a href="#projects">Meus Projetos</a></li>
         </ul>
-    </div>
+      </div>
+
+			<button class="btn_mobile-list" onclick="showList()">
+        <span class="icon"></span>
+      </button>
+		</nav>
+
+		<div class="mobile_nav-list">
+    	<ul>
+      	<li><a class="nav-item" href="#home">Início</a></li>
+      	<li><a class="nav-item" href="#about">Sobre</a></li>
+      	<li><a class="nav-item" href="#skills">Tecnologias</a></li>
+      	<li><a class="nav-item" href="#projects">Meus Projetos</a></li>
+    	</ul>
+  	</div>
+	</header>
 
     <main>
-
-            <!-- Home -->
         <section class="home" id="home">
             <div class="home_container">
-                
                 <div class="home_left">
                 
-                    <h1>Olá, meu nome é</h1>
+                    <h1>Olá! Meu nome é</h1>
                     
                     <h1 class="name_title">Vítor Oliveira Arimatéa</h1>
                     
@@ -104,7 +96,7 @@
 
                     <h2 class="about_title">Sobre mim</h2>
 
-                    <p>Meu nome é Vítor e tenho 19 anos. O primeiro contato que tive com a programação foi em um curso de Técnico em Informática à dois anos atrás. A partir desse momento me interessei tanto que comecei a estudar e aprender por conta própria além do curso e faculdade de Engenharia da computação que faço atualmente.</p>
+                    <p>Meu nome é Vítor e tenho 19 anos. O primeiro contato que tive com a programação foi em um curso de Técnico em Informática à dois anos atrás. A partir desse momento me interessei tanto que comecei a estudar e aprender por conta própria. Atualmente também faço graduação em Engenharia da computação.</p>
                     <br />
                     <p>No momento a área que mais gosto de trabalhar é o Front-End, mas também tenho muitos conhecimentos em UI/UX, Back-End e DBA.</p>
 
@@ -115,7 +107,7 @@
 
             <!-- Skills -->
         <section class="skills" id="skills">
-            <h2>Conhecimentos</h2>
+            <h2>Tecnologias</h2>
         
                 <div class="skills_container">
                         <!-- HTML5 Icon -->
@@ -345,7 +337,7 @@
 
                         <h3 class="project_title">Weather Now</h3>
 
-                        <img class="project_image" src="assets/img/weather-now.png" alt="Imagem do weather Now">
+                        <img class="project_image" src="./assets/img/preview-weather-now.png" alt="Imagem do weather Now">
 
                         <div class="projects_content">
                             
