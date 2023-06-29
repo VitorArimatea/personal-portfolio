@@ -126,6 +126,11 @@
   color: var(--primary-text-color);
 }
 
+.container {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 803px) {
   .navbar {
     justify-content: space-between;

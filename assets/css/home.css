@@ -6,10 +6,6 @@
   color: #fff;
 }
 
-.home_container {
-  display: flex;
-}
-
 .home_left {
   height: 100vh;
   width: 50%;
@@ -84,14 +80,14 @@
   align-items: center;
 }
 
-.home_animated_image {
+.home_animated-image {
   height: 72%;
   width: 72%;
   margin-bottom: 7.2rem;
   transition: 0.5s;
 }
 
-.home_animated_image:hover {
+.home_animated-image:hover {
   scale: 1.1;
 }
 
@@ -130,14 +126,16 @@
 }
 
 @media (max-width: 450px) {
+  .home_left {
+    text-align: center;
+  }
+
   .name-title {
     font-size: 1.8rem;
-    text-align: center;
   }
 
   .home_left h2 {
     font-size: 1.4rem;
-    text-align: center;
   }
 
   .profession-title {

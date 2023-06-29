@@ -15,9 +15,9 @@
 ## Tecnologias
 <p>Para desenvolver esse projeto eu utilizei as seguintes tecnologias:</p> 
 
-- HTML, CSS e JavaScript
+- HTML, CSS e JavaScript.
 
-## Projeto
+## Sobre
 
 <p>Um cantinho com minha personalidade. Onde minha história, realizações e todos os meus projetos mais legais irão ficar.</p>
 
