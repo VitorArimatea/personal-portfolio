@@ -1,4 +1,4 @@
-const professionTitle = document.querySelector(".profession_title")
+const professionTitle = document.querySelector(".profession-title")
 const text = "Desenvolvedor de Software"
 let index = 0
 

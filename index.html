@@ -5,21 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vítor Oliveira Arimatéa | Portfólio pessoal</title>
-    <!-- Favicon -->
   <link rel="shortcut icon" href="assets/img/v-favicon.ico" type="image/x-icon">
-    <!-- CSS -->
+    
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/projects.css">
   <link rel="stylesheet" href="assets/css/about.css">
   <link rel="stylesheet" href="assets/css/skills.css">
-  <link rel="stylesheet" href="assets/css/projects.css">
-    <!-- Icons -->
+    
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <script src="https://unpkg.com/phosphor-icons"></script>
-    <!-- JS -->
+    
   <script defer src="assets/js/navbar.js"></script>
-  <script defer src="assets/js/carousel.js"></script>
   <script defer src="assets/js/typeWriter.js"></script>
+  <script defer src="assets/js/carousel.js"></script>
 </head>
 <body>          
   <header>
@@ -31,9 +30,9 @@
       <div class="nav_list">
         <ul>
           <li class="nav-item"><a href="#home">Início</a></li>
+          <li class="nav-item"><a href="#projects">Meus Projetos</a></li>
           <li class="nav-item"><a href="#about">Sobre</a></li>
           <li class="nav-item"><a href="#skills">Tecnologias</a></li>
-          <li class="nav-item"><a href="#projects">Meus Projetos</a></li>
         </ul>
       </div>
 
@@ -45,119 +44,41 @@
 		<div class="mobile_nav-list">
     	<ul>
       	<li><a class="nav-item" href="#home">Início</a></li>
+      	<li><a class="nav-item" href="#projects">Meus Projetos</a></li>
       	<li><a class="nav-item" href="#about">Sobre</a></li>
       	<li><a class="nav-item" href="#skills">Tecnologias</a></li>
-      	<li><a class="nav-item" href="#projects">Meus Projetos</a></li>
     	</ul>
   	</div>
 	</header>
-
-  <main>
+	<main>
     <section class="home" id="home">
       <div class="home_container">
-        <div class="home-left">
+        <div class="home_left">
           <span class="welcome-title">Olá! Meu nome é</span>
-                    
-                    <h1 class="name_title">Vítor Oliveira Arimatéa</h1>
-                    
-                    <h2> Eu sou <span class="profession_title"></span></h2>
+          <h1 class="name-title">Vítor Oliveira Arimatéa</h1>
+          <h2> Eu sou <span class="profession-title"></span></h2>
+					
+					<a class="cv" href="assets/docs/Currículo Vítor Oliveira Arimatéa 2023.pdf" target="_blank">Meu currículo</a>
 
-                    <a class="cv" href="assets/docs/Currículo Vítor Oliveira Arimatéa 2023.pdf" target="_blank">Meu currículo</a>
-
-                    <div class="social_media">
-                            <!-- My LinkedIn -->
-                        <a href="https://www.linkedin.com/in/vitorarimatea/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
-                            <!-- My Github -->
-                        <a href="https://github.com/VitorArimatea" target="_blank"><i class="devicon-github-original"></i></a>
-                    </div>
-
-                </div>
-
-                <div class="home_right">
-                    
-                    <img class="home_animated_image" src="assets/img/home-animated.svg" alt="Animação de um desenvolvedor usando um notebook">
-
-                </div>
-
-            </div>
-        </section>
-
-            <!-- About -->
-        <section class="about" id="about">
-            <div class="about_container">
-                
-                <div class="about_left">
-                    
-                    <img class="about_animated_image" src="assets/img/about-animated.svg" alt="Animação de uma pessoa utilizando o computador">
-
-                </div>
-
-                <div class="about_right">
-
-                    <h2 class="about_title">Sobre mim</h2>
-
-                    <p>Meu nome é Vítor e tenho 19 anos. O primeiro contato que tive com a programação foi em um curso de Técnico em Informática à dois anos atrás. A partir desse momento me interessei tanto que comecei a estudar e aprender por conta própria. Atualmente também faço graduação em Engenharia da computação.</p>
-                    <br />
-                    <p>No momento a área que mais gosto de trabalhar é o Front-End, mas também tenho muitos conhecimentos em UI/UX, Back-End e DBA.</p>
-
-                </div>
-
-            </div>
-        </section>
-
-            <!-- Skills -->
-        <section class="skills" id="skills">
-            <h2>Tecnologias</h2>
-        
-                <div class="skills_container">
-                        <!-- HTML5 Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="Icone HTML5" class="skills_images" />
-                        <!-- CSS3 Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="Icone CSS3" class="skills_images" />
-                        <!-- JavaScript Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Icone JavaScript" class="skills_images" />
-                        <!-- TypeScript Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Icone TypeScript" class="skills_images" />
-                        <!-- Tailwind CSS -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Icone Tailwind" class="skills_images" />
-                </div>
-                
-                <div class="skills_container_2">
-                        <!-- React Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="Icone React" class="skills_images" />
-                        <!-- NodeJS Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Icone NodeJS" class="skills_images" />
-                        <!-- PHP Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="Icone PHP" class="skills_images" />
-                        <!-- MySQL Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" alt="Icone MySQL" class="skills_images" />
-                </div>
+          <div class="social-media"> 
+						
+						<a href="https://www.linkedin.com/in/vitorarimatea/" target="_blank">
+							<i class="devicon-linkedin-plain"></i>
+						</a>
             
-                <div class="skills_mobile">
-                    <!-- HTML5 Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="Icone HTML5" class="skills_images" />
-                        <!-- CSS3 Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="Icone CSS3" class="skills_images" />
-                        <!-- JavaScript Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Icone JavaScript" class="skills_images" />
-                        <!-- TypeScript Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Icone TypeScript" class="skills_images" />
-                        <!-- React Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="Icone React" class="skills_images" />
-                        <!-- Tailwind CSS -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Icone Java" class="skills_images" />
-                        <!-- NodeJS Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Icone NodeJS" class="skills_images" />
-                        <!-- PHP Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="Icone PHP" class="skills_images" />
-                        <!-- MySQL Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" alt="Icone MySQL" class="skills_images" />
-                </div>
+						<a href="https://github.com/VitorArimatea" target="_blank">
+							<i class="devicon-github-original"></i>
+						</a>
 
-        </section>
-
-            <!-- Projects -->
-        <section class="projects" id="projects">
+          </div>
+				</div>
+				<div class="home_right">
+          <img class="home_animated_image" src="assets/img/home-animated.svg" alt="Animação de um desenvolvedor usando um notebook">
+				</div>
+			</div>
+    </section>
+		
+		<section class="projects" id="projects">
             
             <h2>Meus Projetos</h2>
             
@@ -429,12 +350,82 @@
                     <button class="next_button"><i class="ph-arrow-right"></i></button>
                 </div>
             </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>Feito com muito 💙 por <a href="https://github.com/VitorArimatea" target="_blank">Vítor Oliveira Arimatéa</p></a>
-    </footer>
+    </section>
 
+    <section class="about" id="about">
+            <div class="about_container">
+                
+                <div class="about_left">
+                    
+                    <img class="about_animated_image" src="assets/img/about-animated.svg" alt="Animação de uma pessoa utilizando o computador">
+
+                </div>
+
+                <div class="about_right">
+
+                    <h2 class="about_title">Sobre mim</h2>
+
+                    <p>Meu nome é Vítor e tenho 19 anos. O primeiro contato que tive com a programação foi em um curso de Técnico em Informática à dois anos atrás. A partir desse momento me interessei tanto que comecei a estudar e aprender por conta própria. Atualmente também faço graduação em Engenharia da computação.</p>
+                    <br />
+                    <p>No momento a área que mais gosto de trabalhar é o Front-End, mas também tenho muitos conhecimentos em UI/UX, Back-End e DBA.</p>
+
+                </div>
+
+            </div>
+    </section>
+
+    <section class="skills" id="skills">
+            <h2>Tecnologias</h2>
+        
+                <div class="skills_container">
+                        <!-- HTML5 Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="Icone HTML5" class="skills_images" />
+                        <!-- CSS3 Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="Icone CSS3" class="skills_images" />
+                        <!-- JavaScript Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Icone JavaScript" class="skills_images" />
+                        <!-- TypeScript Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Icone TypeScript" class="skills_images" />
+                        <!-- Tailwind CSS -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Icone Tailwind" class="skills_images" />
+                </div>
+                
+                <div class="skills_container_2">
+                        <!-- React Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="Icone React" class="skills_images" />
+                        <!-- NodeJS Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Icone NodeJS" class="skills_images" />
+                        <!-- PHP Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="Icone PHP" class="skills_images" />
+                        <!-- MySQL Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" alt="Icone MySQL" class="skills_images" />
+                </div>
+            
+                <div class="skills_mobile">
+                    <!-- HTML5 Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="Icone HTML5" class="skills_images" />
+                        <!-- CSS3 Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="Icone CSS3" class="skills_images" />
+                        <!-- JavaScript Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Icone JavaScript" class="skills_images" />
+                        <!-- TypeScript Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Icone TypeScript" class="skills_images" />
+                        <!-- React Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="Icone React" class="skills_images" />
+                        <!-- Tailwind CSS -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Icone Java" class="skills_images" />
+                        <!-- NodeJS Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Icone NodeJS" class="skills_images" />
+                        <!-- PHP Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="Icone PHP" class="skills_images" />
+                        <!-- MySQL Icon -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" alt="Icone MySQL" class="skills_images" />
+                </div>
+
+    </section>
+  </main>
+  <footer>
+        <p>Feito com muito 💙 por <a href="https://github.com/VitorArimatea" target="_blank">Vítor Oliveira Arimatéa</p></a>
+  </footer>
 </body>
 </html>
