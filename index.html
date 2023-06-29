@@ -1,430 +1,460 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vítor Oliveira Arimatéa | Portfólio pessoal</title>
-  <link rel="shortcut icon" href="assets/img/v.ico" type="image/x-icon">
-    
-  <link rel="stylesheet" href="assets/css/global.css">
-  <link rel="stylesheet" href="assets/css/home.css">
-  <link rel="stylesheet" href="assets/css/projects.css">
-  <link rel="stylesheet" href="assets/css/about.css">
-  <link rel="stylesheet" href="assets/css/skills.css">
-    
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <script src="https://unpkg.com/phosphor-icons"></script>
-    
-  <script defer src="assets/js/navbar.js"></script>
-  <script defer src="assets/js/typeWriter.js"></script>
-  <script defer src="assets/js/carousel.js"></script>
-</head>
-<body>          
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <h1><a href="#">Vítor Arimatéa</a></h1>
-      </div>
-                                                            
-      <div class="nav_list">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vítor Oliveira Arimatéa | Portfólio pessoal</title>
+    <link rel="shortcut icon" href="assets/img/v.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/skills.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <script defer src="assets/js/navbar.js"></script>
+    <script defer src="assets/js/typeWriter.js"></script>
+    <script defer src="assets/js/carousel.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1><a href="#">Vítor Arimatéa</a></h1>
+        </div>
+
+        <div class="nav_list">
+          <ul>
+            <li class="nav-item"><a href="#home">Início</a></li>
+            <li class="nav-item"><a href="#projects">Meus Projetos</a></li>
+            <li class="nav-item"><a href="#about">Sobre</a></li>
+            <li class="nav-item"><a href="#skills">Tecnologias</a></li>
+          </ul>
+        </div>
+
+        <button class="btn_mobile-list" onclick="showList()">
+          <span class="icon"></span>
+        </button>
+      </nav>
+
+      <div class="mobile_nav-list">
         <ul>
-          <li class="nav-item"><a href="#home">Início</a></li>
-          <li class="nav-item"><a href="#projects">Meus Projetos</a></li>
-          <li class="nav-item"><a href="#about">Sobre</a></li>
-          <li class="nav-item"><a href="#skills">Tecnologias</a></li>
+          <li><a class="nav-item" href="#home">Início</a></li>
+          <li><a class="nav-item" href="#projects">Meus Projetos</a></li>
+          <li><a class="nav-item" href="#about">Sobre</a></li>
+          <li><a class="nav-item" href="#skills">Tecnologias</a></li>
         </ul>
       </div>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <div class="container">
+          <div class="home_left">
+            <span class="welcome-title">Olá! Meu nome é</span>
+            <h1 class="name-title">Vítor Oliveira Arimatéa</h1>
+            <h2>Eu sou <span class="profession-title"></span></h2>
 
-			<button class="btn_mobile-list" onclick="showList()">
-        <span class="icon"></span>
-      </button>
-		</nav>
+            <a
+              class="cv"
+              href="assets/docs/Currículo Vítor Oliveira Arimatéa 2023.pdf"
+              target="_blank"
+              >Meu currículo</a
+            >
 
-		<div class="mobile_nav-list">
-    	<ul>
-      	<li><a class="nav-item" href="#home">Início</a></li>
-      	<li><a class="nav-item" href="#projects">Meus Projetos</a></li>
-      	<li><a class="nav-item" href="#about">Sobre</a></li>
-      	<li><a class="nav-item" href="#skills">Tecnologias</a></li>
-    	</ul>
-  	</div>
-	</header>
-	<main>
-    <section class="home" id="home">
-      <div class="container">
-        <div class="home_left">
-          <span class="welcome-title">Olá! Meu nome é</span>
-          <h1 class="name-title">Vítor Oliveira Arimatéa</h1>
-          <h2> Eu sou <span class="profession-title"></span></h2>
-					
-					<a class="cv" href="assets/docs/Currículo Vítor Oliveira Arimatéa 2023.pdf" target="_blank">Meu currículo</a>
+            <div class="social-media">
+              <a
+                href="https://www.linkedin.com/in/vitorarimatea/"
+                target="_blank"
+              >
+                <i class="devicon-linkedin-plain"></i>
+              </a>
 
-          <div class="social-media"> 
-						
-						<a href="https://www.linkedin.com/in/vitorarimatea/" target="_blank">
-							<i class="devicon-linkedin-plain"></i>
-						</a>
-            
-						<a href="https://github.com/VitorArimatea" target="_blank">
-							<i class="devicon-github-original"></i>
-						</a>
-
+              <a href="https://github.com/VitorArimatea" target="_blank">
+                <i class="devicon-github-original"></i>
+              </a>
+            </div>
           </div>
-				</div>
-				<div class="home_right">
-          <img 
-						class="home_animated-image" 
-						src="assets/img/home-animated.svg" 
-						alt="Animação de um desenvolvedor usando um notebook"
-					/>
-				</div>
-			</div>
-    </section>
-		
-		<section class="projects" id="projects">
-            
-            <h2>Meus Projetos</h2>
-            
-            <span class="how_show_text">Para mais informações, basta passar o mouse por cima do projeto.</span>
-            
-            <div class="projects_container">
+          <div class="home_right">
+            <img
+              class="home_animated-image"
+              src="assets/img/home-animated.svg"
+              alt="Animação de um desenvolvedor usando um notebook"
+            />
+          </div>
+        </div>
+      </section>
 
-                    <!-- Project 1-->
-                <article class="projects_cards">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+      <section class="projects" id="projects">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="projects_container">
+          <article class="project-card">
+            <h3 class="project-title">iMSafeBank</h3>
+            <img
+              class="project-image"
+              src="assets/img/imsafebank.png"
+              alt="Um conceito de site para banco moderno."
+            />
+            <div class="project_content">
+              <p class="project-tech">
+                Feito com React, TypeScript e TailwindCSS.
+              </p>
 
-                    <h3 class="project_title">Programming & Development</h3>
-
-                    <img class="project_image" src="assets/img/programming-development.png" alt="Landing page sobre programação e desenvolvimento">
-
-                    <div class="projects_content">
-                        
-                        <p>Landing page feita com HTML, CSS e JS.</p>
-
-                        <div class="project_sources">
-                            
-                            <a href="https://vitorarimatea.github.io/programming-development/" target="_blank"><i class="devicon-devicon-plain"></i></a>
-
-                            <a href="https://github.com/VitorArimatea/programming-development" target="_blank"><i class="devicon-github-original"></i></a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-                    <!-- Project 2-->
-                <article class="projects_cards">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-                    <h3 class="project_title">Weather Now</h3>
-
-                    <img class="project_image" src="assets/img/weather-now.png" alt="Imagem do weather Now">
-
-                    <div class="projects_content">
-                        
-                        <p>Feito em React.JS e Tailwind CSS utilizando uma API.</p>
-
-                        <div class="project_sources">
-                            
-                            <a href="https://weather-app-vite-react.vercel.app/" target="_blank"><i class="devicon-devicon-plain"></i></a>
-
-                            <a href="https://github.com/VitorArimatea/weather-now" target="_blank"><i class="devicon-github-original"></i></a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-                    <!-- Project 3-->
-                <article class="projects_cards">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    
-                    <h3 class="project_title">Jogo da velha simples</h3>
-
-                    <img class="project_image" src="assets/img/jogo-da-velha-project.png" alt="Um simples jogo da velha">
-
-                    <div class="projects_content">
-                        <p>Jogo da velha feito com HTML,CSS e JS.</p>
-
-                        <div class="project_sources">
-                            
-                            <a href="https://vitorarimatea.github.io/jogo-da-velha-js/" target="_blank"><i class="devicon-devicon-plain"></i></a>
-
-                            <a href="https://github.com/VitorArimatea/jogo-da-velha-js" target="_blank"><i class="devicon-github-original"></i></a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-                    <!-- Project 4-->
-                <article class="projects_cards">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    
-                    <h3 class="project_title">iMSafeBank</h3>
-
-                    <img class="project_image" src="assets/img/imsafebank.png" alt="Um simples jogo da velha">
-                    
-                    <div class="projects_content">
-                        <p>Feito com React, TypeScript e TailwindCSS.</p>
-
-                        <div class="project_sources">
-                            
-                            <a href="https://im-safe-bank.vercel.app/" target="_blank"><i class="devicon-devicon-plain"></i></a>
-
-                            <a href="https://github.com/VitorArimatea/im-safe-bank" target="_blank"><i class="devicon-github-original"></i></a>
-
-                        </div>
-                    </div>
-
-                </article>
-
-                    <!-- Project 5-->
-                <article class="projects_cards">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-                    <h3 class="project_title">Em breve...</h3>
-                    
-                    <div class="projects_content">
-                    </div>
-
-                </article>
-
-                    <!-- Project 6-->
-                <article class="projects_cards">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>   
-
-                    <h3 class="project_title">Em breve...</h3>
-                    
-                    <div class="projects_content">
-                    </div>
-
-                </article>
-
+              <div class="project_sources">
+                <a href="https://im-safe-bank.vercel.app/" target="_blank">
+                  <i class="devicon-devicon-plain"></i>
+                </a>
+                <a
+                  href="https://github.com/VitorArimatea/im-safe-bank"
+                  target="_blank"
+                >
+                  <i class="devicon-github-original"></i>
+                </a>
+              </div>
             </div>
-            
-            <div class="projects_mobile">
-                <div class="projects_carousel">
-                    <article class="projects_cards">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+          </article>
 
-                        <h3 class="project_title">Programming & Development</h3>
+          <article class="project-card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
 
-                        <img class="project_image" src="assets/img/programming-development.png" alt="Landing page sobre programação e desenvolvimento">
+            <h3 class="project-title">Em breve...</h3>
 
-                        <div class="projects_content">
-                            
-                            <p>Landing page feita com HTML, CSS e JS.</p>
+            <div class="projects_content"></div>
+          </article>
 
-                            <div class="project_sources">
-                                
-                                <a href="https://vitorarimatea.github.io/programming-development/" target="_blank"><i class="devicon-devicon-plain"></i></a>
+          <article class="project-card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
 
-                                <a href="https://github.com/VitorArimatea/programming-development" target="_blank"><i class="devicon-github-original"></i></a>
+            <h3 class="project-title">Em breve...</h3>
 
-                            </div>
+            <div class="projects_content"></div>
+          </article>
 
-                        </div>
+          <article class="project-card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
 
-                    </article>
+            <h3 class="project-title">Em breve...</h3>
 
-                        <!-- Project 2-->
-                    <article class="projects_cards">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+            <div class="projects_content"></div>
+          </article>
+        </div>
 
-                        <h3 class="project_title">Weather Now</h3>
+        <div class="projects_mobile">
+          <div class="projects_carousel">
+            <article class="projects_cards">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
 
-                        <img class="project_image" src="./assets/img/preview-weather-now.png" alt="Imagem do weather Now">
+              <h3 class="project_title">Programming & Development</h3>
 
-                        <div class="projects_content">
-                            
-                            <p>Feito em React.JS e Tailwind CSS utilizando uma API.</p>
+              <img
+                class="project_image"
+                src="assets/img/programming-development.png"
+                alt="Landing page sobre programação e desenvolvimento"
+              />
 
-                            <div class="project_sources">
-                                
-                                <a href="https://weather-app-vite-react.vercel.app/" target="_blank"><i class="devicon-devicon-plain"></i></a>
+              <div class="projects_content">
+                <p>Landing page feita com HTML, CSS e JS.</p>
 
-                                <a href="https://github.com/VitorArimatea/weather-now" target="_blank"><i class="devicon-github-original"></i></a>
+                <div class="project_sources">
+                  <a
+                    href="https://vitorarimatea.github.io/programming-development/"
+                    target="_blank"
+                    ><i class="devicon-devicon-plain"></i
+                  ></a>
 
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                        <!-- Project 3-->
-                    <article class="projects_cards">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        
-                        <h3 class="project_title">Jogo da velha simples</h3>
-
-                        <img class="project_image" src="assets/img/jogo-da-velha-project.png" alt="Um simples jogo da velha">
-
-                        <div class="projects_content">
-                            <p>Jogo da velha feito com HTML,CSS e JS.</p>
-
-                            <div class="project_sources">
-                                
-                                <a href="https://vitorarimatea.github.io/jogo-da-velha-js/" target="_blank"><i class="devicon-devicon-plain"></i></a>
-
-                                <a href="https://github.com/VitorArimatea/jogo-da-velha-js" target="_blank"><i class="devicon-github-original"></i></a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                        <!-- Project 4-->
-                    <article class="projects_cards">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        
-                        <h3 class="project_title">Em breve...</h3>
-                        
-                        <div class="projects_content">
-                        </div>
-
-                    </article>
-
-                        <!-- Project 5-->
-                    <article class="projects_cards">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                        <h3 class="project_title">Em breve...</h3>
-                        
-                        <div class="projects_content">
-                        </div>
-
-                    </article>
-
-                        <!-- Project 6-->
-                    <article class="projects_cards">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>   
-
-                        <h3 class="project_title">Em breve...</h3>
-                        
-                        <div class="projects_content">
-                        </div>
-
-                    </article>
-
+                  <a
+                    href="https://github.com/VitorArimatea/programming-development"
+                    target="_blank"
+                    ><i class="devicon-github-original"></i
+                  ></a>
                 </div>
-                <div class="carousel_buttons">
-                    <button class="prev_button"><i class="ph-arrow-left"></i></button>
-                    <button class="next_button"><i class="ph-arrow-right"></i></button>
-                </div>
-            </div>
-    </section>
+              </div>
+            </article>
 
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about_left">
-          <img 
-						class="about_animated-image" 
-						src="assets/img/about-animated.svg" 
-						alt="Animação de uma pessoa utilizando o computador"
-					/>
-				</div>
-				<div class="about_right">
-					<h2 class="section-title">Sobre mim</h2>
-					<p>Meu nome é Vítor e tenho 19 anos. O primeiro contato que tive com a programação foi em um curso de Técnico em Informática à dois anos atrás. A partir desse momento me interessei tanto que comecei a estudar e aprender por conta própria. Atualmente também faço graduação em Engenharia da computação.</p><br />
-          <p>No momento a área que mais gosto de trabalhar é o Front-End, mas também tenho muitos conhecimentos em UI/UX, Back-End e DBA.</p>
-				</div>
-			</div>
-    </section>
+            <!-- Project 2-->
+            <article class="projects_cards">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
 
-    <section class="skills" id="skills">
-            <h2>Tecnologias</h2>
-        
-                <div class="skills_container">
-                        <!-- HTML5 Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="Icone HTML5" class="skills_images" />
-                        <!-- CSS3 Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="Icone CSS3" class="skills_images" />
-                        <!-- JavaScript Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Icone JavaScript" class="skills_images" />
-                        <!-- TypeScript Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Icone TypeScript" class="skills_images" />
-                        <!-- Tailwind CSS -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Icone Tailwind" class="skills_images" />
-                </div>
-                
-                <div class="skills_container_2">
-                        <!-- React Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="Icone React" class="skills_images" />
-                        <!-- NodeJS Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Icone NodeJS" class="skills_images" />
-                        <!-- PHP Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="Icone PHP" class="skills_images" />
-                        <!-- MySQL Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" alt="Icone MySQL" class="skills_images" />
-                </div>
-            
-                <div class="skills_mobile">
-                    <!-- HTML5 Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="Icone HTML5" class="skills_images" />
-                        <!-- CSS3 Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="Icone CSS3" class="skills_images" />
-                        <!-- JavaScript Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Icone JavaScript" class="skills_images" />
-                        <!-- TypeScript Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Icone TypeScript" class="skills_images" />
-                        <!-- React Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="Icone React" class="skills_images" />
-                        <!-- Tailwind CSS -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Icone Java" class="skills_images" />
-                        <!-- NodeJS Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Icone NodeJS" class="skills_images" />
-                        <!-- PHP Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="Icone PHP" class="skills_images" />
-                        <!-- MySQL Icon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" alt="Icone MySQL" class="skills_images" />
-                </div>
+              <h3 class="project_title">Weather Now</h3>
 
-    </section>
-  </main>
-  <footer>
-        <p>Feito com muito 💙 por <a href="https://github.com/VitorArimatea" target="_blank">Vítor Oliveira Arimatéa</p></a>
-  </footer>
-</body>
+              <img
+                class="project_image"
+                src="./assets/img/preview-weather-now.png"
+                alt="Imagem do weather Now"
+              />
+
+              <div class="projects_content">
+                <p>Feito em React.JS e Tailwind CSS utilizando uma API.</p>
+
+                <div class="project_sources">
+                  <a
+                    href="https://weather-app-vite-react.vercel.app/"
+                    target="_blank"
+                    ><i class="devicon-devicon-plain"></i
+                  ></a>
+
+                  <a
+                    href="https://github.com/VitorArimatea/weather-now"
+                    target="_blank"
+                    ><i class="devicon-github-original"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3-->
+            <article class="projects_cards">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <h3 class="project_title">Jogo da velha simples</h3>
+
+              <img
+                class="project_image"
+                src="assets/img/jogo-da-velha-project.png"
+                alt="Um simples jogo da velha"
+              />
+
+              <div class="projects_content">
+                <p>Jogo da velha feito com HTML,CSS e JS.</p>
+
+                <div class="project_sources">
+                  <a
+                    href="https://vitorarimatea.github.io/jogo-da-velha-js/"
+                    target="_blank"
+                    ><i class="devicon-devicon-plain"></i
+                  ></a>
+
+                  <a
+                    href="https://github.com/VitorArimatea/jogo-da-velha-js"
+                    target="_blank"
+                    ><i class="devicon-github-original"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4-->
+            <article class="projects_cards">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <h3 class="project_title">Em breve...</h3>
+
+              <div class="projects_content"></div>
+            </article>
+
+            <!-- Project 5-->
+            <article class="projects_cards">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <h3 class="project_title">Em breve...</h3>
+
+              <div class="projects_content"></div>
+            </article>
+
+            <!-- Project 6-->
+            <article class="projects_cards">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <h3 class="project_title">Em breve...</h3>
+
+              <div class="projects_content"></div>
+            </article>
+          </div>
+          <div class="carousel_buttons">
+            <button class="prev_button"><i class="ph-arrow-left"></i></button>
+            <button class="next_button"><i class="ph-arrow-right"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about_left">
+            <img
+              class="about_animated-image"
+              src="assets/img/about-animated.svg"
+              alt="Animação de uma pessoa utilizando o computador"
+            />
+          </div>
+          <div class="about_right">
+            <h2 class="section-title">Sobre mim</h2>
+            <p>
+              Meu nome é Vítor e tenho 19 anos. O primeiro contato que tive com
+              a programação foi em um curso de Técnico em Informática à dois
+              anos atrás. A partir desse momento me interessei tanto que comecei
+              a estudar e aprender por conta própria. Atualmente também faço
+              graduação em Engenharia da computação.
+            </p>
+            <br />
+            <p>
+              No momento a área que mais gosto de trabalhar é o Front-End, mas
+              também tenho muitos conhecimentos em UI/UX, Back-End e DBA.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <h2 class="section-title">Tecnologias</h2>
+
+        <div class="skills_container">
+          <!-- HTML5 Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
+            alt="Icone HTML5"
+            class="skills_images"
+          />
+          <!-- CSS3 Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"
+            alt="Icone CSS3"
+            class="skills_images"
+          />
+          <!-- JavaScript Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+            alt="Icone JavaScript"
+            class="skills_images"
+          />
+          <!-- TypeScript Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            alt="Icone TypeScript"
+            class="skills_images"
+          />
+          <!-- Tailwind CSS -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+            alt="Icone Tailwind"
+            class="skills_images"
+          />
+        </div>
+
+        <div class="skills_container_2">
+          <!-- React Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+            alt="Icone React"
+            class="skills_images"
+          />
+          <!-- NodeJS Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            alt="Icone NodeJS"
+            class="skills_images"
+          />
+          <!-- PHP Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"
+            alt="Icone PHP"
+            class="skills_images"
+          />
+          <!-- MySQL Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg"
+            alt="Icone MySQL"
+            class="skills_images"
+          />
+        </div>
+
+        <div class="skills_mobile">
+          <!-- HTML5 Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
+            alt="Icone HTML5"
+            class="skills_images"
+          />
+          <!-- CSS3 Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"
+            alt="Icone CSS3"
+            class="skills_images"
+          />
+          <!-- JavaScript Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+            alt="Icone JavaScript"
+            class="skills_images"
+          />
+          <!-- TypeScript Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            alt="Icone TypeScript"
+            class="skills_images"
+          />
+          <!-- React Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+            alt="Icone React"
+            class="skills_images"
+          />
+          <!-- Tailwind CSS -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+            alt="Icone Java"
+            class="skills_images"
+          />
+          <!-- NodeJS Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            alt="Icone NodeJS"
+            class="skills_images"
+          />
+          <!-- PHP Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"
+            alt="Icone PHP"
+            class="skills_images"
+          />
+          <!-- MySQL Icon -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg"
+            alt="Icone MySQL"
+            class="skills_images"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Feito com muito 💙 por
+        <a href="https://github.com/VitorArimatea" target="_blank"
+          >Vítor Oliveira Arimatéa</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
