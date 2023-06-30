@@ -114,6 +114,10 @@
 }
 
 @media (max-width: 868px) {
+  .projects {
+    padding: 1rem 0.5rem;
+  }
+
   .projects_container {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
