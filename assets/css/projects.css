@@ -58,6 +58,7 @@
   border-radius: 0.5rem;
   z-index: 0;
   transition: 0.4s;
+  opacity: 0.7;
 }
 
 .project-card:hover .project-image {
