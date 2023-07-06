@@ -215,11 +215,16 @@ footer p {
 
 footer a {
   font-weight: 500;
+  transition: 0.3s ease-in-out;
 }
 
 footer a,
 p {
   color: var(--primary-text-color);
+}
+
+footer a:hover {
+  color: #97d0ff;
 }
 
 @media (max-width: 495px) {
