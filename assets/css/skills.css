@@ -36,19 +36,26 @@
   padding: 1.7rem;
 }
 
-@media (max-width: 521px) {
+@media (max-width: 630px) {
   .skills {
-    padding: 4rem 0.5rem;
+    padding: 4rem 1rem;
+  }
+
+  .skills_container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 
   .skills_images {
     height: 9rem;
   }
-
-  .skills_container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-  gap: 20px;
 }
+
+@media (max-width: 365px) {
+  .skills_container {
+     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .skills_images {
+    height: 7rem;
+  }
 }
