@@ -1,7 +1,9 @@
+import Hero from "./components/Hero";
+
 export default function Home() {
   return (
-    <div className="text-7xl flex justify-center items-center h-[100vh]">
-      Hello World!
+    <div className="overflow-hidden">
+      <Hero />
     </div>
   );
 }
