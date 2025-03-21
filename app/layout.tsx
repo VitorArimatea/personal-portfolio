@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { ThemeProvider } from "./provider";
+
+import "./globals.css";
+
+import { NavbarMenu } from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +19,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Vítor Arimatéa",
-  description: "Software Developer Porfolio",
+  description:
+    "Desenvolvedor de software, especializado em TypeScript, Angular, React, Next e Java.",
 };
 
 export default function RootLayout({
@@ -29,13 +34,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NavbarMenu />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
