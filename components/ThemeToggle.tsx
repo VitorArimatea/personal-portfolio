@@ -1,41 +1,59 @@
 "use client";
 
-import * as React from "react";
-import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import { Moon, Sun } from "lucide-react";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 export function ThemeToggle() {
-  const { setTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  const isDark = resolvedTheme === "dark";
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild className="cursor-pointer">
-        <Button variant="outline" size="icon">
-          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Moon className="absolute text-white h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">Toggle theme</span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")} className="cursor-pointer">
-          Light
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")} className="cursor-pointer">
-          Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")} className="cursor-pointer">
-          System
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <Button
+      variant="outline"
+      size="icon"
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      className="relative flex items-center justify-center cursor-pointer"
+    >
+      <motion.div
+        initial={{ rotate: 0, scale: 1, opacity: 1 }}
+        animate={{
+          rotate: isDark ? 90 : 0,
+          scale: isDark ? 0 : 1,
+          opacity: isDark ? 0 : 1,
+        }}
+        transition={{ duration: 0.3 }}
+        className="absolute text-[#111] dark:text-[#fcfcfc]"
+      >
+        <Sun className="h-[1.2rem] w-[1.2rem]" />
+      </motion.div>
+
+      <motion.div
+        initial={{ rotate: -90, scale: 0, opacity: 0 }}
+        animate={{
+          rotate: isDark ? 0 : -180,
+          scale: isDark ? 1 : 0,
+          opacity: isDark ? 1 : 0,
+        }}
+        transition={{ duration: 0.3 }}
+        className="absolute text-[#111] dark:text-[#fcfcfc]"
+      >
+        <Moon className="h-[1.2rem] w-[1.2rem]" />
+      </motion.div>
+
+      <span className="sr-only">Alternar tema</span>
+    </Button>
   );
 }
 
