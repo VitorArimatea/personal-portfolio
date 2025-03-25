@@ -1,76 +1,114 @@
 "use client";
 
-import React, { useState } from "react";
-
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/MenuItem";
-import { cn } from "@/lib/utils";
+import { useState } from "react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
+import { motion, AnimatePresence } from "framer-motion";
 
-export function NavbarMenu() {
-  return (
-    <div className="relative w-full flex items-center justify-around">
-      <Navbar />
-    </div>
-  );
-}
+import { navItems } from "@/data";
 
-function Navbar({ className }: { className?: string }) {
-  const [active, setActive] = useState<string | null>(null);
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className={cn("z-50", className)}>
-      <Menu setActive={setActive}>
-        <div className="md:w-5xl flex gap-8 justify-between items-center">
-          <h1 className=" text-2xl font-bold dark:text-blue-50">{"{ VA }"}</h1>
-          <div className="flex justify-center gap-5">
-            <MenuItem
-              setActive={setActive}
-              active={active}
-              item="Meus Projetos"
-            >
-              <Link href="/projects">
-                <div className="text-sm grid grid-cols-1 md:grid-cols-2 gap-10 p-4">
-                  <ProductItem
-                    title="Saindo do papel..."
-                    href="project1"
-                    src="https://assets.aceternity.com/demos/algochurn.webp"
-                    description="Logo logo você vai poder curtir essa belezinha!"
-                  />
-                  <ProductItem
-                    title="Saindo do papel..."
-                    href="project1"
-                    src="https://assets.aceternity.com/demos/algochurn.webp"
-                    description="Logo logo você vai poder curtir essa belezinha!"
-                  />
-                  <ProductItem
-                    title="Saindo do papel..."
-                    href="project1"
-                    src="https://assets.aceternity.com/demos/algochurn.webp"
-                    description="Logo logo você vai poder curtir essa belezinha!"
-                  />
-                  <ProductItem
-                    title="Saindo do papel..."
-                    href="project1"
-                    src="https://assets.aceternity.com/demos/algochurn.webp"
-                    description="Logo logo você vai poder curtir essa belezinha!"
-                  />
-                </div>
+    <header className="relative w-full flex justify-between items-center px-4 md:px-8 py-4 bg-stone-200 dark:bg-stone-800">
+      <h1 className="text-2xl font-bold text-[#111] dark:text-[#fcfcfc]">
+        <Link
+          href="/"
+          className="hover:text-blue-600 dark:hover:text-blue-300 duration-200 transition ease-in-out"
+        >
+          {"{ VA }"}
+        </Link>
+      </h1>
+
+      <button
+        className="md:hidden text-[#111] dark:text-[#fcfcfc] cursor-pointer"
+        onClick={toggleMenu}
+        aria-label="Abrir menu de navegação"
+      >
+        <motion.div
+          initial={false}
+          animate={menuOpen ? "open" : "closed"}
+          variants={{
+            closed: { rotate: 0 },
+            open: { rotate: 90 },
+          }}
+          className="w-8 h-8 flex flex-col justify-center items-center"
+        >
+          <motion.span
+            className="absolute w-6 h-0.5 bg-[#111] dark:bg-[#fcfcfc]"
+            variants={{
+              closed: { y: -6, rotate: 0 },
+              open: { y: 0, rotate: 45 },
+            }}
+            transition={{ duration: 0.3 }}
+          />
+          <motion.span
+            className="w-6 h-0.5 bg-[#111] dark:bg-[#fcfcfc]"
+            variants={{
+              closed: { opacity: 1 },
+              open: { opacity: 0 },
+            }}
+            transition={{ duration: 0.3 }}
+          />
+          <motion.span
+            className="absolute w-6 h-0.5 bg-[#111] dark:bg-[#fcfcfc]"
+            variants={{
+              closed: { y: 6, rotate: 0 },
+              open: { y: 0, rotate: -45 },
+            }}
+            transition={{ duration: 0.3 }}
+          />
+        </motion.div>
+      </button>
+
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.nav
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ duration: 0.3 }}
+            className="absolute md:hidden w-full top-full left-0 bg-stone-200 dark:bg-stone-800 flex flex-col 
+            gap-5 p-4 z-10"
+          >
+            {navItems.map((item) => (
+              <Link
+                key={item.link}
+                href={item.link}
+                className="text-[#111] dark:text-[#fcfcfc] hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.name}
               </Link>
-            </MenuItem>
+            ))}
 
-            <MenuItem setActive={setActive} active={active} item="Serviços">
-              <div className="flex flex-col space-y-4 text-sm">
-                <HoveredLink href="/web-dev">Desenvolvimento Web</HoveredLink>
-                <HoveredLink href="/interface-design">
-                  Desenvolvimento back-end
-                </HoveredLink>
-                <HoveredLink href="/seo">SEO</HoveredLink>
-              </div>
-            </MenuItem>
-          </div>
-          <ThemeToggle />
-        </div>
-      </Menu>
-    </div>
+            <ThemeToggle />
+          </motion.nav>
+        )}
+      </AnimatePresence>
+
+      <nav className="hidden md:flex gap-6">
+        {navItems.map((item) => (
+          <Link
+            key={item.link}
+            href={item.link}
+            className="text-[#111] dark:text-[#fcfcfc] hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+          >
+            {item.name}
+          </Link>
+        ))}
+      </nav>
+
+      <div className="hidden md:block">
+        <ThemeToggle />
+      </div>
+    </header>
   );
-}
+};
+
+export default Navbar;
