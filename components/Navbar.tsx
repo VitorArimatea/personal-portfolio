@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="relative w-full flex justify-between items-center px-4 md:px-8 py-4 bg-stone-200 dark:bg-stone-800">
+    <header className="relative w-full flex justify-between items-center px-4 md:px-8 py-4 dark:bg-[#0A1128] md:dark:bg-transparent z-10">
       <h1 className="text-2xl font-bold text-[#111] dark:text-[#fcfcfc]">
         <Link
           href="/"
@@ -73,7 +73,7 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3 }}
-            className="absolute md:hidden w-full top-full left-0 bg-stone-200 dark:bg-stone-800 flex flex-col 
+            className="absolute md:hidden w-full top-full left-0 bg-[#FEFCFB] dark:bg-[#0A1128] flex flex-col 
             gap-5 p-4 z-10"
           >
             {navItems.map((item) => (
@@ -92,7 +92,7 @@ const Navbar = () => {
         )}
       </AnimatePresence>
 
-      <nav className="hidden md:flex gap-6">
+      <nav className="font-semibold hidden md:flex gap-6">
         {navItems.map((item) => (
           <Link
             key={item.link}
