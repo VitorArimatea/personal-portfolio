@@ -4,9 +4,6 @@ import { ThemeProvider } from "./providers/ThemeProvider";
 
 import "./globals.css";
 
-import { NavbarMenu } from "../components/Navbar";
-import Footer from "../components/Footer";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -39,9 +36,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NavbarMenu />
           {children}
-          <Footer />
         </ThemeProvider>
       </body>
     </html>
