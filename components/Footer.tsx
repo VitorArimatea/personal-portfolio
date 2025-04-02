@@ -3,47 +3,48 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import Link from "next/link";
+import Title from "./ui/Title";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="pt-20 pb-10" id="contact">
+    <footer className="pt-15 pb-10">
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw] dark:text-[#f1f1f1]">
-          Pronto para colaborar no seu{" "}
-          <span className="text-blue-400">próximo projeto.</span>
-        </h1>
-        <p className="dark:text-[#e2e2e2] mt-5 md:mt-10 text-center">
+        <Title highlight="próximo projeto" className="lg:max-w-[45vw]">
+          Pronto para colaborar no seu
+        </Title>
+        <span className="dark:text-[#e2e2e2] mt-5 md:mt-10 md:text-xl">
           Entre em contato comigo hoje mesmo.
-        </p>
-        <a href="mailto:contato@vitorarimatea.com.br">
+        </span>
+        <Link
+          href="mailto:contato@vitorarimatea.com.br"
+          rel="noopener noreferrer"
+        >
           <Button
             title="Entrar em contato"
             icon={<FaLocationArrow />}
             position="right"
           />
-        </a>
+        </Link>
       </div>
 
-      <div className="flex mt-10 md:mt-15 flex-col-reverse gap-5 md:flex-row justify-between items-center">
-        <p className="text-[13px] md:text-base font-light md:font-normal dark:text-[#fff]">
+      <div className="flex mt-10 md:mt-15 flex-col-reverse md:flex-row justify-between items-center">
+        <span className="text-[12px] md:text-base mt-10 md:mt-0">
           Copyright © 2025 Vítor Arimatéa - Todos os direitos reservados.
-        </p>
+        </span>
 
-        <div className="flex gap-5 md:gap-3 mt-5 md:mt-0">
+        <div className="flex gap-5 md:gap-3 mt-3 md:mt-0">
           {socialMedia.map((info) => (
-            <div
+            <Link
               key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center"
+              href={info.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Visitar ${info.alt}`}
+              className="flex justify-center items-center cursor-pointer rounded-md bg-[#0a1128] dark:bg-transparent p-2"
             >
-              <Link
-                href={info.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-md bg-[#0a1128] dark:bg-transparent p-2"
-              >
-                <img src={info.img} alt={info.alt} width={30} height={30} />
-              </Link>
-            </div>
+              <Image src={info.img} alt={info.alt} width={25} height={25} />
+            </Link>
           ))}
         </div>
       </div>
