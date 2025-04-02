@@ -1,9 +1,9 @@
+import Title from "./ui/Title";
 import Button from "./ui/AnimatedButton";
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import Link from "next/link";
-import Title from "./ui/Title";
 import Image from "next/image";
 
 const Footer = () => {
