@@ -1,13 +1,11 @@
-import { Suspense, lazy } from "react";
 import { motion } from "framer-motion";
 
-import { FaLocationArrow } from "react-icons/fa6";
+import Spotlight from "./ui/Spotlight";
+import SpotlightNew from "./ui/SpotlightNew";
+import TextGenerateEffect from "./ui/TextGenerateEffect";
 import Link from "next/link";
 import Button from "./ui/AnimatedButton";
-
-const SpotlightNew = lazy(() => import("./ui/SpotlightNew"));
-const Spotlight = lazy(() => import("./ui/Spotlight"));
-const TextGenerateEffect = lazy(() => import("./ui/TextGenerateEffect"));
+import { FaLocationArrow } from "react-icons/fa6";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -18,7 +16,7 @@ const containerVariants = {
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: -50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
@@ -31,31 +29,27 @@ const Hero = () => {
       variants={containerVariants}
       className="h-[100dvh] flex flex-col gap-4 md:gap-6 justify-center items-center"
     >
-      <div className="hidden dark:block">
-        <Suspense fallback={null}>
-          <SpotlightNew />
-          <Spotlight className="absolute top-0 left-1/2 transform -translate-x-1/2 h-[50vh] w-[50vw] opacity-50 blur-2xl" />
-          <Spotlight className="absolute top-0 right-0 transform translate-x-1/2 h-[50vh] w-[50vw] opacity-50 blur-2xl" />
-        </Suspense>
+      <div className="hidden sm:flex">
+        <SpotlightNew />
+        <Spotlight className="absolute inset-x-1/2 top-0 h-[50vh] w-[50vw] opacity-50 blur-2xl -translate-x-1/2" />
+        <Spotlight className="absolute top-0 right-0 h-[50vh] w-[50vw] opacity-50 blur-2xl translate-x-1/2" />
       </div>
 
       <motion.h1
         variants={itemVariants}
-        className="text-[35px] md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 from-neutral-600 to-neutral-900"
+        className="text-[35px] md:text-5xl font-bold text-center bg-gradient-to-b from-neutral-600 to-neutral-900 dark:from-neutral-50 dark:to-neutral-400 bg-clip-text text-transparent [webkit-mask-image:linear-gradient(to_bottom,rgba(0,0,0,1),rgba(0,0,0,0.8))] mask-image:linear-gradient(to_bottom,rgba(0,0,0,1),rgba(0,0,0,0.8))"
       >
         Vítor Arimatéa{" "}
-        <span className="bg-clip-text text-transparent bg-gradient-to-b dark:from-blue-200 dark:to-blue-400 from-blue-500 to-blue-900">
-          Software developer
+        <span className="bg-clip-text text-transparent bg-gradient-to-b dark:from-blue-200 dark:to-blue-400 from-blue-500 to-blue-900 [webkit-mask-image:linear-gradient(to_bottom,rgba(0,0,0,1),rgba(0,0,0,0.8))] mask-image:linear-gradient(to_bottom,rgba(0,0,0,1),rgba(0,0,0,0.8))">
+          Software Developer
         </span>
       </motion.h1>
 
       <motion.div variants={itemVariants}>
-        <Suspense fallback={<p className="text-xl">Carregando...</p>}>
-          <TextGenerateEffect
-            className="font-normal tracking-wider text-[18px] md:text-2xl text-center"
-            words="Eu transformo códigos em experiências únicas e impactantes"
-          />
-        </Suspense>
+        <TextGenerateEffect
+          className="font-normal tracking-wider text-[18px] md:text-2xl text-center"
+          words="Eu transformo códigos em experiências únicas e impactantes"
+        />
       </motion.div>
 
       <motion.div variants={itemVariants}>
