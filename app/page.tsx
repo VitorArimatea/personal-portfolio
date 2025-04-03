@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import AnimatedSection from "@/components/AnimatedSection";
+import ScrollAnimatedSection from "@/components/ui/ScrollAnimatedSection";
 import RecentProjects from "@/components/RecentProjects";
-import { Skills } from "@/components/Skills";
-import { MyTechs } from "@/components/MyTechs";
+import { MyServices } from "@/components/MyServices";
+import { MyStack } from "@/components/MyStack";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -32,20 +32,22 @@ export default function Home() {
       aria-label="Página inicial do site"
     >
       <Navbar />
-      <div className="max-w-7xl w-full px-5 sm:px-10">
+      <div className="max-w-7xl w-full px-5 sm:px-10 ">
         <Hero />
 
-        <AnimatedSection>
+        <ScrollAnimatedSection>
           <RecentProjects />
-        </AnimatedSection>
+        </ScrollAnimatedSection>
 
-        <AnimatedSection delay={0.2}>
-          <Skills />
-        </AnimatedSection>
+        <ScrollAnimatedSection delay={0.2}>
+          <section id="services">
+            <MyServices />
+          </section>
+        </ScrollAnimatedSection>
 
-        <AnimatedSection delay={0.4}>
-          <MyTechs />
-        </AnimatedSection>
+        <ScrollAnimatedSection delay={0.4}>
+          <MyStack />
+        </ScrollAnimatedSection>
 
         <Footer />
       </div>
