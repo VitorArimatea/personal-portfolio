@@ -18,7 +18,7 @@ const RecentProjects = () => {
             key={project.id}
           >
             <Link href={project.link}>
-              <PinContainer title={project.link}>
+              <PinContainer title={`Projeto ${project.title}`}>
                 <div className="relative flex items-center justify-center w-75 sm:w-100 overflow-hidden h-[23vh] sm:h-[30vh] mb-10">
                   <Image
                     src={project.img}
