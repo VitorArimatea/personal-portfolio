@@ -6,12 +6,17 @@ import Title from "@/components/ui/Title";
 import Image from "next/image";
 import Link from "next/link";
 import { socialMedia } from "@/data";
+import Spotlight from "@/components/ui/Spotlight";
+import SpotlightNew from "@/components/ui/SpotlightNew";
 
 const About = () => {
   return (
     <div className="overflow-hidden">
       <Navbar />
-
+      <div className="hidden dark:flex">
+        <Spotlight className="top-0 h-[50vh] blur-2xl" />
+        <SpotlightNew />
+      </div>
       <PageTransition>
         <Title highlight="Mim" className="mt-5">
           Sobre
@@ -19,7 +24,7 @@ const About = () => {
         <main className="flex flex-col lg:flex-row lg:h-[75dvh]">
           <div className="lg:w-[50%] flex flex-col justify-center items-center p-5">
             <Image
-              src="/vitor-profile-ghibli.png"
+              src="/vitor-profile-ghibli.svg"
               alt="Foto de perfil do Vítor"
               className="lg:mb-0 border-2 border-blue-300 rounded-full z-5 shadow-md shadow-blue-400/30 hover:shadow-xl hover:shadow-blue-400/50 transition-shadow duration-300 ease-in-out"
               height={400}
