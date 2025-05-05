@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
@@ -10,13 +9,11 @@ import { navItems } from "@/data";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <header className="relative w-full flex justify-between items-center px-4 md:px-8 py-4 dark:bg-background md:dark:bg-transparent z-70">
-      <h1 className="text-2xl font-bold">
+    <header className="relative w-full flex justify-between items-center px-5 lg:px-8 py-5 dark:bg-transparent z-70">
+      <h1 className="text-xl md:text-2xl font-bold">
         <Link
           href="/"
           className="hover:text-blue-600 dark:hover:text-blue-300 duration-200"
@@ -26,85 +23,77 @@ const Navbar = () => {
       </h1>
 
       <button
-        className="md:hidden cursor-pointer"
+        className="cursor-pointer relative z-50"
         onClick={toggleMenu}
         aria-label="Abrir menu de navegação"
       >
-        <motion.div
-          animate={menuOpen ? "open" : "closed"}
-          variants={{
-            closed: { rotate: 0 },
-            open: { rotate: -90 },
-          }}
-          className="w-8 h-8 flex flex-col justify-center items-center"
-        >
+        <div className="w-8 h-8 flex flex-col justify-center items-center relative">
           <motion.span
             className="absolute w-6 h-0.5 bg-[#111] dark:bg-[#fcfcfc]"
-            variants={{
-              closed: { y: -6, rotate: 0 },
-              open: { y: 0, rotate: 45 },
-            }}
+            initial={false}
+            animate={menuOpen ? { rotate: 45, y: 0 } : { rotate: 0, y: -6 }}
             transition={{ duration: 0.3 }}
           />
           <motion.span
             className="w-6 h-0.5 bg-[#111] dark:bg-[#fcfcfc]"
-            variants={{
-              closed: { opacity: 1 },
-              open: { opacity: 0 },
-            }}
+            animate={menuOpen ? { opacity: 0 } : { opacity: 1 }}
             transition={{ duration: 0.3 }}
           />
           <motion.span
             className="absolute w-6 h-0.5 bg-[#111] dark:bg-[#fcfcfc]"
-            variants={{
-              closed: { y: 6, rotate: 0 },
-              open: { y: 0, rotate: -45 },
-            }}
+            initial={false}
+            animate={menuOpen ? { rotate: -45, y: 0 } : { rotate: 0, y: 6 }}
             transition={{ duration: 0.3 }}
           />
-        </motion.div>
+        </div>
       </button>
 
       <AnimatePresence>
         {menuOpen && (
-          <motion.nav
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ duration: 0.3 }}
-            className="absolute md:hidden w-full top-full left-0 bg-background dark:bg-background flex flex-col gap-5 p-4"
+          <motion.div
+            initial={{
+              opacity: 1,
+              x: "100%",
+              y: "-100%",
+              scale: 0.95,
+            }}
+            animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+            exit={{
+              opacity: 1,
+              x: "100%",
+              y: "-100%",
+              scale: 0.95,
+            }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="fixed top-0 right-0 w-full h-screen md:w-[18rem] md:h-[30rem] bg-background dark:bg-background flex flex-col justify-center items-center gap-8 z-40 border-l border-b border-gray-800 rounded-bl-xl"
           >
-            {navItems.map((item) => (
-              <Link
+            {navItems.map((item, index) => (
+              <motion.nav
                 key={item.link}
-                href={item.link}
-                className="font-semibold hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
-                onClick={() => setMenuOpen(false)}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2 }}
               >
-                {item.name}
-              </Link>
+                <Link
+                  href={item.link}
+                  className="text-3xl text-left font-semibold hover:text-blue-900 dark:hover:text-blue-300 transition-colors"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              </motion.nav>
             ))}
 
-            <ThemeToggle />
-          </motion.nav>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: navItems.length * 0.2 }}
+            >
+              <ThemeToggle />
+            </motion.div>
+          </motion.div>
         )}
       </AnimatePresence>
-
-      <nav className="font-semibold hidden md:flex gap-6">
-        {navItems.map((item) => (
-          <Link
-            key={item.link}
-            href={item.link}
-            className="relative hover:text-[#333] dark:hover:text-[#e7e7e7] group transition-colors"
-          >
-            {item.name}
-          </Link>
-        ))}
-      </nav>
-
-      <div className="hidden md:block">
-        <ThemeToggle />
-      </div>
     </header>
   );
 };
