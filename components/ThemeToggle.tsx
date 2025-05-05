@@ -24,7 +24,7 @@ export function ThemeToggle() {
       variant="outline"
       size="icon"
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="relative flex items-center justify-center cursor-pointer"
+      className="relative flex items-center justify-center cursor-pointer rounded-full p-5"
     >
       <motion.div
         initial={{ rotate: 0, scale: 1, opacity: 1 }}
@@ -36,7 +36,7 @@ export function ThemeToggle() {
         transition={{ duration: 0.3 }}
         className="absolute text-[#111] dark:text-[#fcfcfc]"
       >
-        <Sun className="h-[1.2rem] w-[1.2rem]" />
+        <Sun className="h-[2rem] w-[2rem]" />
       </motion.div>
 
       <motion.div
@@ -49,10 +49,8 @@ export function ThemeToggle() {
         transition={{ duration: 0.3 }}
         className="absolute text-[#111] dark:text-[#fcfcfc]"
       >
-        <Moon className="h-[1.2rem] w-[1.2rem]" />
+        <Moon className="h-[2rem] w-[2rem]" />
       </motion.div>
-
-      <span className="sr-only">Alternar tema</span>
     </Button>
   );
 }
