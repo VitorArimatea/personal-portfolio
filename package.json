@@ -24,6 +24,7 @@
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-spinners": "^0.15.0",
+    "sass": "^1.87.0",
     "tailwind-merge": "^3.0.2",
     "three": "^0.174.0",
     "tw-animate-css": "^1.2.4"
