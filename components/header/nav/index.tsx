@@ -6,32 +6,14 @@ import { menuSlide } from "../anim";
 import Link from "./Link";
 import Curve from "./Curve";
 import Footer from "./Footer";
+import { navItems } from "@/data";
 
-const navItems = [
-  {
-    title: "Início",
-    href: "/",
-  },
-  {
-    title: "Projetos",
-    href: "/projects",
-  },
-  {
-    title: "Sobre",
-    href: "/about",
-  },
-  {
-    title: "Serviços",
-    href: "/services",
-  },
-];
-
-export default function index() {
+export default function nav() {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
   return (
-    <motion.div
+    <motion.nav
       variants={menuSlide}
       initial="initial"
       animate="enter"
@@ -59,6 +41,6 @@ export default function index() {
         <Footer />
       </div>
       <Curve />
-    </motion.div>
+    </motion.nav>
   );
 }
