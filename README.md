@@ -4,7 +4,7 @@
 
   <img alt="Preview" src=".github/preview.png" width="100%">
 
-<p align="center">Versão Mobile</p>  
+<p align="center">Versão Mobile</p>
 
 <p align="center">
     <img alt="Mobile preview" src=".github/mobile-preview.png" width="45%">
@@ -13,7 +13,8 @@
 #
 
 ## Tecnologias
-<p>Para desenvolver esse projeto eu utilizei as seguintes tecnologias:</p> 
+
+<p>Para desenvolver esse projeto eu utilizei as seguintes tecnologias:</p>
 
 - Next.js, React, TypeScript, TailwindCSS e SCSS.
 
@@ -23,4 +24,4 @@
 
 ## Visualizar
 
-Link para visualizar meu portfólio: 
+Link para visualizar meu portfólio: https://vitorarimatea.com.br/
