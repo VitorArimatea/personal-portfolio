@@ -1,27 +1,66 @@
-<h1 align="center">Vítor Arimatéa Portfolio 2025 - Software Developer</h1>
+<div align="center">
+<h1>Vítor Arimatéa - Portfólio</h1>
+<h3>Desenvolvedor de Software Full Stack</h3>
+<p>Um espaço para apresentar minhas habilidades, experiências e principais projetos</p>
 
-<p align="center">Versão Desktop</p>
+<br/>
 
-  <img alt="Preview" src=".github/preview.png" width="100%">
+<p>🖥️ <strong>Versão Desktop</strong></p>
 
-<p align="center">Versão Mobile</p>
-
-<p align="center">
-    <img alt="Mobile preview" src=".github/mobile-preview.png" width="45%">
+<p>
+  <img alt="Preview Desktop" src=".github/preview.png" width="100%">
 </p>
 
-#
+<p>📱 <strong>Versão Mobile</strong></p>
 
-## Tecnologias
+<p>
+  <img alt="Preview Mobile" src=".github/mobile-preview.png" width="45%">
+</p>
+</div>
 
-<p>Para desenvolver esse projeto eu utilizei as seguintes tecnologias:</p>
+---
 
-- Next.js, React, TypeScript, TailwindCSS e SCSS.
+## 🧑🏻‍💻 Tecnologias Utilizadas
 
-## Projeto
+Frameworks, libs e linguagens utilizadas no projeto:
 
-<p>Meu Portfólio Pessoal, uma vitrine para demonstrar todo o meu conhecimento, um pouco sobre mim e os meus melhores projetos.</p>
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [Shadcn](https://ui.shadcn.com/)
+- [Aceternity](https://ui.aceternity.com/)
+- [SCSS](https://sass-lang.com/)
+- [Motion](https://motion.dev/)
 
-## Visualizar
+---
 
-Link para visualizar meu portfólio: https://vitorarimatea.com.br/
+## 🧠 Sobre o Projeto
+
+Este portfólio foi criado com o objetivo de ser uma vitrine interativa do meu trabalho como desenvolvedor. Aqui, você encontrará:
+
+- 🧑‍💻 Um pouco sobre mim e minha jornada na programação
+- 🛠️ Meus projetos favoritos com foco em performance, usabilidade e segurança
+- 🎨 Uma interface moderna e responsiva, com Dark Mode
+
+Este projeto representa minha evolução como profissional e minha dedicação em oferecer soluções completas, escaláveis e com uma ótima experiência de usuário.
+
+---
+
+## 🔗 Acesse o Portfólio
+
+👉 Acessar: [vitorarimatea.com.br](https://vitorarimatea.com.br/)
+
+---
+
+## 📬 Contato
+
+Se quiser trocar uma ideia, dar alguma sugestão ou contratar meus serviços:
+
+- Email: contato@vitorarimatea.com.br
+- LinkedIn: [linkedin.com/in/vitorarimatea](https://linkedin.com/in/vitorarimatea)
+
+---
+
+<p align="center">
+  Feito realmente com muito 💙 por Vítor Arimatéa
+</p>
