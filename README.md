@@ -8,13 +8,13 @@
 <p>🖥️ <strong>Versão Desktop</strong></p>
 
 <p>
-  <img alt="Preview Desktop" src=".github/preview.png" width="100%">
+  <img alt="Preview Desktop" src="public/readme/desktop-preview.png" width="100%">
 </p>
 
 <p>📱 <strong>Versão Mobile</strong></p>
 
 <p>
-  <img alt="Preview Mobile" src=".github/mobile-preview.png" width="45%">
+  <img alt="Preview Mobile" src="public/readme/mobile-preview.png" width="45%">
 </p>
 </div>
 
