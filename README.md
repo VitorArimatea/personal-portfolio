@@ -1,6 +1,13 @@
 <div align="center">
-<h1>Vítor Arimatéa - Portfólio</h1>
-<h3>Desenvolvedor de Software Full Stack</h3>
+
+<p align="center">
+  <a href="https://vitorarimatea.com.br">
+    <img src="public/readme/personal-logo.png" height="96">
+    <h1>Vítor Arimatéa - Portfólio</h1>
+  </a>
+  <h3>Desenvolvedor de Software Full Stack</h3>
+</p>
+
 <p>Um espaço para apresentar minhas habilidades, experiências e principais projetos</p>
 
 <br/>
