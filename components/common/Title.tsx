@@ -19,7 +19,7 @@ export default function Title({
     >
       {children}{" "}
       {highlight && (
-        <span className="bg-clip-text text-transparent bg-gradient-to-b dark:from-blue-200 dark:to-blue-400 from-blue-600 to-blue-900">
+        <span className="bg-clip-text text-transparent bg-gradient-to-b dark:from-blue-200 dark:to-blue-400 from-blue-400 to-blue-900">
           {highlight}
         </span>
       )}
