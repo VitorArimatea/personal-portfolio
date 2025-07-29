@@ -36,7 +36,9 @@ export default function Home() {
         <Hero />
 
         <ScrollAnimatedSection>
-          <Title highlight="Projetos" as={"h2"}>Meus melhores</Title>
+          <Title highlight="Projetos" as={"h2"}>
+            Meus melhores
+          </Title>
           <RecentProjects />
         </ScrollAnimatedSection>
 
