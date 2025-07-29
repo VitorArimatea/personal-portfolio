@@ -1,16 +1,25 @@
+"use client";
+
 import { cn } from "@/lib/utils";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 type SpotlightProps = {
   className?: string;
   fill?: string;
 };
 
-export const Spotlight = ({ className, fill }: SpotlightProps) => {
+const Spotlight = ({ className, fill }: SpotlightProps) => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <svg
       className={cn(
-        "animate-spotlight pointer-events-none absolute z-[1]  h-[169%] w-[138%] lg:w-[84%] opacity-0",
+        "pointer-events-none absolute z-[1] h-[169%] w-[138%] lg:w-[84%] opacity-0 spotlight-initial",
+        isMounted && "animate-spotlight opacity-100",
         className
       )}
       xmlns="http://www.w3.org/2000/svg"
@@ -54,3 +63,5 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
     </svg>
   );
 };
+
+export default Spotlight;
