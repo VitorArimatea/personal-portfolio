@@ -47,7 +47,7 @@ const About = () => {
               Acredito que a IA não é apenas um hype passageiro, mas uma ferramenta
               poderosa para aumentar a capacidade humana. Por isso, me
               especializei em integrar APIs de LLMs como GPT e Gemini para dar
-              "superpoderes" a sistemas, tornando-os mais eficientes e a
+              &quot;superpoderes&quot; a sistemas, tornando-os mais eficientes e a
               comunicação com clientes mais natural.
             </p>
             <div className="flex gap-3 mt-7">

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import RingLoader from "react-spinners/RingLoader";
 
-const loading = () => {
+const Loading = () => {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -26,4 +26,4 @@ const loading = () => {
     </div>
   );
 };
-export default loading;
+export default Loading;

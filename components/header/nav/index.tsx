@@ -8,7 +8,7 @@ import Curve from "./Curve";
 import Footer from "./Footer";
 import { navItems } from "@/data";
 
-export default function nav() {
+export default function Nav() {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 

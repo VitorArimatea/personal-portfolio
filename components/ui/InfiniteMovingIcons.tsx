@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 export const InfiniteMovingIcons = ({
   items,
@@ -25,7 +26,7 @@ export const InfiniteMovingIcons = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  }, [addAnimation]);
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -99,7 +100,13 @@ export const InfiniteMovingIcons = ({
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               <div className="flex items-center gap-4">
-                <img src={item.icon} alt={item.name} className="h-8 w-8" />
+                <Image
+                  src={item.icon}
+                  alt={item.name}
+                  className="h-8 w-8"
+                  width={32}
+                  height={32}
+                />
                 <div>
                   <h3 className="text-sm font-semibold text-neutral-800 dark:text-gray-100">
                     {item.name}

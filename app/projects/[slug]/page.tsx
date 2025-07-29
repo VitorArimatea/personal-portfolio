@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getProjectBySlug, getAllProjects } from "@/data";
+import { getProjectBySlug } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -8,7 +8,6 @@ import {
   FaArrowLeft,
   FaTag,
 } from "react-icons/fa";
-import FeatureList from "@/components/ui/FeatureList";
 import TechnologyCard from "@/components/ui/TechnologyCard";
 import { Button } from "@/components/ui/button";
 import PageTransition from "@/components/animations/PageTransition";
@@ -107,8 +106,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   "Compartilho aqui os bastidores e motivações deste projeto, mostrando como cada etapa contribuiu para meu crescimento profissional e para entregar valor real aos usuários."}
               </p>
             </div>
-
-            
           </div>
 
           {/* Sidebar */}
