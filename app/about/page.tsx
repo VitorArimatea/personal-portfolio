@@ -1,30 +1,32 @@
-import Navbar from "@/components/Navbar";
+import PageTransition from "@/components/animations/PageTransition";
 
-import PageTransition from "@/components/ui/PageTransition";
-import Title from "@/components/ui/Title";
+import Spotlight from "@/components/ui/Spotlight";
+import SpotlightNew from "@/components/ui/SpotlightNew";
+
+import Title from "@/components/common/Title";
 
 import Image from "next/image";
 import Link from "next/link";
+
 import { socialMedia } from "@/data";
-import Spotlight from "@/components/ui/Spotlight";
-import SpotlightNew from "@/components/ui/SpotlightNew";
 
 const About = () => {
   return (
     <div className="overflow-hidden">
-      <Navbar />
-      <div className="hidden dark:flex">
-        <Spotlight className="top-0 h-[50vh] blur-2xl" />
-        <SpotlightNew />
-      </div>
       <PageTransition>
-        <Title highlight="Mim" className="mt-5">
+        <div className="hidden dark:md:flex">
+          <Spotlight className="top-0 h-[50vh] blur-2xl" />
+          <SpotlightNew />
+        </div>
+
+        <Title highlight="Mim" className="mt-20">
           Sobre
         </Title>
-        <main className="flex flex-col lg:flex-row lg:h-[75dvh]">
+
+        <main className="flex flex-col lg:flex-row lg:h-[80dvh]">
           <div className="lg:w-[50%] flex flex-col justify-center items-center p-5">
             <Image
-              src="/vitor-profile-ghibli.svg"
+              src="/profile-pic.svg"
               alt="Foto de perfil do Vítor"
               className="lg:mb-0 border-2 border-blue-300 rounded-full z-5 shadow-md shadow-blue-400/30 hover:shadow-xl hover:shadow-blue-400/50 transition-shadow duration-300 ease-in-out"
               height={400}
@@ -33,15 +35,20 @@ const About = () => {
           </div>
           <div className="w-[100dvw] lg:w-[50%] flex flex-col justify-center text-left text-[17.5px] md:text-[20px] mb-4 py-2 px-8">
             <p className="lg:max-w-[28em]">
-              Sou desenvolvedor com experiência em projetos utilizando
-              front-end, back-end, UX/UI e bancos de dados relacionais e não
-              relacionais. Estou sempre aprendendo e aplicando novas tecnologias
-              para entregar soluções de qualidade.
+              Eu sou um desenvolvedor full-stack com pouco mais de 1 ano de
+              experiência, apaixonado em criar soluções inovadoras e escaláveis
+              da melhor forma possível. Usando tecnologias como Typescript,
+              Next.js, Angular, Node.js, entre outras, eu busco entregar
+              resultados de alta qualidade e desempenho.
             </p>
             <br />
+
             <p className="lg:max-w-[28em]">
-              Estou disponível para projetos como freelancer e também em busca
-              de oportunidades para seguir crescendo na área de tecnologia.
+              Acredito que a IA não é apenas um hype passageiro, mas uma ferramenta
+              poderosa para aumentar a capacidade humana. Por isso, me
+              especializei em integrar APIs de LLMs como GPT e Gemini para dar
+              "superpoderes" a sistemas, tornando-os mais eficientes e a
+              comunicação com clientes mais natural.
             </p>
             <div className="flex gap-3 mt-7">
               {socialMedia.map((info) => (
