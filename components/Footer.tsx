@@ -1,4 +1,4 @@
-import Title from "./ui/Title";
+import Title from "./common/Title";
 import Button from "./ui/AnimatedButton";
 import { FaLocationArrow } from "react-icons/fa6";
 

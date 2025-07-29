@@ -1,23 +1,26 @@
-import { recentProjects } from "@/data";
+import { recentProjects, getAllProjects } from "@/data";
 
 import Link from "next/link";
 import { PinContainer } from "./ui/PinContainer";
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
-import Title from "./ui/Title";
 
-const RecentProjects = () => {
+interface RecentProjectsProps {
+  showAll?: boolean;
+}
+
+const RecentProjects = ({ showAll = false }: RecentProjectsProps) => {
+  const projects = showAll ? getAllProjects() : recentProjects;
+
   return (
-    <section className="py-10" id="recentProjects">
-      <Title highlight="Projetos">Meus melhores</Title>
-
+    <section className="mb-10" id="recentProjects">
       <div className="flex flex-wrap justify-center py-10 md:gap-25 lg:gap-30">
-        {recentProjects.map((project) => (
+        {projects.map((project) => (
           <div
             className="h-[30rem] flex items-center justify-center w-96"
             key={project.id}
           >
-            <Link href={project.link}>
+            <Link href={`/projects/${project.slug}`}>
               <PinContainer title={`Projeto ${project.title}`}>
                 <div className="relative flex items-center justify-center w-75 sm:w-100 overflow-hidden h-[23vh] sm:h-[30vh] mb-10">
                   <Image
@@ -59,7 +62,7 @@ const RecentProjects = () => {
 
                   <div className="flex justify-center items-center">
                     <p className="flex text-sm md:text-xs lg:text-xl">
-                      Visualizar site
+                      Ver detalhes
                     </p>
                     <FaLocationArrow className="ms-3" color="#85BDFF" />
                   </div>

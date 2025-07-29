@@ -29,10 +29,10 @@ const Hero = () => {
       <motion.h1
         variants={itemVariants}
         className="text-[35px] sm:text-5xl font-bold text-center bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 from-neutral-600 
-        to-neutral-900 bg-clip-text text-transparent"
+        to-neutral-900 bg-clip-text text-transparent max-sm:flex max-sm:flex-col  "
       >
         Vítor Arimatéa{" "}
-        <span className="bg-clip-text text-transparent bg-gradient-to-b dark:from-blue-200 dark:to-blue-400 from-blue-600 to-blue-900">
+        <span className="bg-clip-text text-transparent bg-gradient-to-b dark:from-blue-200 dark:to-blue-400 from-[#496dd7] to-[#617fda]">
           Software Developer
         </span>
       </motion.h1>
