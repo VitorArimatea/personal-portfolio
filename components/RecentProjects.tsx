@@ -13,15 +13,15 @@ const RecentProjects = ({ showAll = false }: RecentProjectsProps) => {
   const projects = showAll ? getAllProjects() : recentProjects;
 
   return (
-    <section className="mb-10" id="recentProjects">
-      <div className="flex flex-wrap justify-center py-10 md:gap-25 lg:gap-30">
+    <section className="mb-10" id="projetos-recentes">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((project) => (
           <div
             className="h-[30rem] flex items-center justify-center w-96"
             key={project.id}
           >
             <Link href={`/projects/${project.slug}`}>
-              <PinContainer title={`Projeto ${project.title}`}>
+              <PinContainer title={`${project.title}`}>
                 <div className="relative flex items-center justify-center w-75 sm:w-100 overflow-hidden h-[23vh] sm:h-[30vh] mb-10">
                   <Image
                     src={project.img}
