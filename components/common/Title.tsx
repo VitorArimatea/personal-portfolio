@@ -15,11 +15,11 @@ export default function Title({
 }: TitleProps) {
   return (
     <Tag
-      className={`heading bg-gradient-to-b from-neutral-600 to-neutral-900 dark:from-neutral-50 dark:to-neutral-400 bg-clip-text text-transparent ${className}`}
+      className={`heading bg-gradient-to-b from-[#0e0e0f] to-[#0d0d0d] dark:from-neutral-50 dark:to-neutral-400 bg-clip-text text-transparent ${className}`}
     >
       {children}{" "}
       {highlight && (
-        <span className="bg-clip-text text-transparent bg-gradient-to-b dark:from-blue-200 dark:to-blue-400 from-blue-400 to-blue-900">
+        <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#102f80] to-[#060A1B] dark:from-blue-200 dark:to-blue-400">
           {highlight}
         </span>
       )}
