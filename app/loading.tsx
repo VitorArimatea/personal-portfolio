@@ -18,7 +18,7 @@ const Loading = () => {
   return (
     <div className="h-screen flex justify-center items-center">
       <RingLoader
-        color={theme === "dark" ? "#8BC0FF" : "#1B4BC6"}
+        color={theme === "dark" ? "#8BC0FF" : "#09164d"}
         size={150}
         aria-label="Tela de carregamento"
         data-testid="loader"
