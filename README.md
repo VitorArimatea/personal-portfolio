@@ -1,73 +1,72 @@
 <div align="center">
 
-<p align="center">
-  <a href="https://vitorarimatea.com.br">
-    <img src="public/readme/personal-logo.png" height="96">
-    <h1>Vítor Arimatéa - Portfólio</h1>
-  </a>
-  <h3>Desenvolvedor de Software Full Stack</h3>
-</p>
+<a href="https://vitorarimatea.com.br">
+  <img src="public/readme/personal-logo.svg" height="96" alt="Logo Pessoal"/>
+</a>
 
-<p>Um espaço para apresentar minhas habilidades, experiências e principais projetos</p>
+# **Vítor Arimatéa**
+### Desenvolvedor Full Stack
 
-<br/>
+Transformo ideias em **soluções digitais completas**, unindo **Front-End, Back-End e UX** para criar experiências funcionais e envolventes. com total foco em entregar **produtos modernos, performáticos e seguros**.  
 
-<p>🖥️ <strong>Versão Desktop</strong></p>
+*No meu portfólio você encontrará meus principais projetos, habilidades e experiências.*
 
-<p>
-  <img alt="Preview Desktop" src="public/readme/desktop-preview.png" width="100%">
-</p>
-
-<p>📱 <strong>Versão Mobile</strong></p>
-
-<p>
-  <img alt="Preview Mobile" src="public/readme/mobile-preview.png" width="45%">
-</p>
 </div>
 
 ---
 
-## 🧑🏻‍💻 Tecnologias Utilizadas
+## Pré-visualização
 
-Frameworks, libs e linguagens utilizadas no projeto:
+<div align="center">
 
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind](https://tailwindcss.com/)
-- [Shadcn](https://ui.shadcn.com/)
-- [Aceternity](https://ui.aceternity.com/)
-- [SCSS](https://sass-lang.com/)
-- [Motion](https://motion.dev/)
+### **Versão Desktop**
+<img src="public/readme/desktop-preview.png" width="100%" alt="Preview Desktop"/>
 
----
+### **Versão Mobile**
+<img src="public/readme/mobile-preview.png" width="45%" alt="Preview Mobile"/>
 
-## 🧠 Sobre o Projeto
-
-Este portfólio foi criado com o objetivo de ser uma vitrine interativa do meu trabalho como desenvolvedor. Aqui, você encontrará:
-
-- 🧑‍💻 Um pouco sobre mim e minha jornada na programação
-- 🛠️ Meus projetos favoritos com foco em performance, usabilidade e segurança
-- 🎨 Uma interface moderna e responsiva, com Dark Mode
-
-Este projeto representa minha evolução como profissional e minha dedicação em oferecer soluções completas, escaláveis e com uma ótima experiência de usuário.
+</div>
 
 ---
 
-## 🔗 Acesse o Portfólio
+## Tecnologias Utilizadas
 
-👉 Acessar: [vitorarimatea.com.br](https://vitorarimatea.com.br/)
-
----
-
-## 📬 Contato
-
-Se quiser trocar uma ideia, dar alguma sugestão ou contratar meus serviços:
-
-- Email: contato@vitorarimatea.com.br
-- LinkedIn: [linkedin.com/in/vitorarimatea](https://linkedin.com/in/vitorarimatea)
+- **Next.js**
+- **TypeScript**
+- **Tailwind CSS + Shadcn/UI + Aceternity**
+- **Framer Motion**
+- **SCSS**
 
 ---
 
-<p align="center">
-  Feito realmente com muito 💙 por Vítor Arimatéa
-</p>
+## Sobre o Projeto
+
+Meu portfólio foi pensado como uma **vitrine interativa e profissional**, destacando:
+
+- **Minha jornada** e experiência em desenvolvimento full stack
+- **Projetos reais**, com foco em usabilidade, segurança e escalabilidade
+- **UI/UX moderna e responsiva**, alinhada às tendências atuais
+
+
+
+## 🔗 Acessar
+
+➡️ **[vitorarimatea.com.br](https://vitorarimatea.vercel.app/)**
+
+---
+
+## 📬 Vamos Conversar?
+
+Se quiser **trocar uma ideia, sugerir melhorias ou contratar meus serviços**:
+
+- 📧 **Email:** vitorodev@outlook.com 
+- 💼 **LinkedIn:** [linkedin.com/in/vitorarimatea](https://linkedin.com/in/vitorarimatea)
+
+---
+
+<div align="center">
+
+### 💙 Feito com dedicação por **Vítor Arimatéa**  
+_"Code. Create. Evolve."_
+
+</div>
