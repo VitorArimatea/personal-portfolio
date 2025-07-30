@@ -9,11 +9,11 @@
 
 Transformo ideias em **soluções digitais completas**, unindo **Front-End, Back-End e UX** para criar experiências funcionais e envolventes. com total foco em entregar **produtos modernos, performáticos e seguros**.  
 
-*No meu portfólio você encontrará meus principais projetos, habilidades e experiências.*
+*No meu portfólio você encontrará os meus principais projetos, habilidades e experiências.*
 
 </div>
 
-<img src="public/readme/desktop-preview.png" width="100%" alt="Preview Desktop"/>
+<img src="public/readme/preview.svg" width="100%" alt="Imagem de Pré-visualização do meu portfólio"/>
 
 ## Tecnologias Utilizadas
 
@@ -27,32 +27,31 @@ Transformo ideias em **soluções digitais completas**, unindo **Front-End, Back
 
 ## Sobre o Projeto
 
-Meu portfólio foi pensado como uma **vitrine interativa e profissional**, destacando:
+Meu portfólio foi pensado em ser como uma **vitrine interativa e profissional**, destacando:
 
-- **Minha jornada** e experiência em desenvolvimento full stack
-- **Projetos reais**, com foco em usabilidade, segurança e escalabilidade
-- **UI/UX moderna e responsiva**, alinhada às tendências atuais
+- **Minha jornada:** um pouco sobre mim e minha experiência;
+- **Projetos reais:** com foco em usabilidade, segurança e escalabilidade;
+- **UI/UX moderna e responsiva:** alinhada às tendências atuais.
 
 
 
-## 🔗 Acessar
+## 🔗 Dê uma olhada no meu Portfólio
 
 ➡️ **[vitorarimatea.com.br](https://vitorarimatea.vercel.app/)**
 
 ---
 
-## 📬 Vamos Conversar?
+## Vamos Conversar?
 
 Se quiser **trocar uma ideia, sugerir melhorias ou contratar meus serviços**:
-
-- 📧 **Email:** vitorodev@outlook.com 
-- 💼 **LinkedIn:** [linkedin.com/in/vitorarimatea](https://linkedin.com/in/vitorarimatea)
+ 
+- **LinkedIn:** [linkedin.com/in/vitorarimatea](https://linkedin.com/in/vitorarimatea)
 
 ---
 
 <div align="center">
 
-### 💙 Feito com dedicação por **Vítor Arimatéa**  
-_"Code. Create. Evolve."_
+### Feito com muita dedicação por **Mim**  
+_"Sonhe. Crie. Alcance."_
 
 </div>
