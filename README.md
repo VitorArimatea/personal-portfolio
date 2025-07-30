@@ -13,21 +13,7 @@ Transformo ideias em **soluções digitais completas**, unindo **Front-End, Back
 
 </div>
 
----
-
-## Pré-visualização
-
-<div align="center">
-
-### **Versão Desktop**
 <img src="public/readme/desktop-preview.png" width="100%" alt="Preview Desktop"/>
-
-### **Versão Mobile**
-<img src="public/readme/mobile-preview.png" width="45%" alt="Preview Mobile"/>
-
-</div>
-
----
 
 ## Tecnologias Utilizadas
 
