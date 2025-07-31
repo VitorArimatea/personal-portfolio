@@ -35,7 +35,7 @@ Meu portfólio foi pensado em ser como uma **vitrine interativa e profissional**
 
 
 
-## 🔗 Dê uma olhada no meu Portfólio
+## Dê uma olhada no meu Portfólio
 
 ➡️ **[vitorarimatea.vercel.app](https://vitorarimatea.vercel.app/)**
 
