@@ -51,7 +51,7 @@ Se quiser **trocar uma ideia, sugerir melhorias ou contratar meus serviços**:
 
 <div align="center">
 
-### Feito com muita dedicação por **Mim**  
+### Criado e mantido com muita dedicação por **Vítor Arimatéa**  
 _"Sonhe. Crie. Alcance."_
 
 </div>
