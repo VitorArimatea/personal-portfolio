@@ -1,9 +1,9 @@
-import RecentProjects from "@/components/RecentProjects";
-
 import Spotlight from "@/components/ui/Spotlight";
 import SpotlightNew from "@/components/ui/SpotlightNew";
 import PageTransition from "@/components/animations/PageTransition";
 import Title from "@/components/common/Title";
+import ProjectsGrid from "@/components/ProjectsGrid";
+import { getAllProjects } from "@/data";
 
 const AllProjects = () => {
   return (
@@ -16,7 +16,7 @@ const AllProjects = () => {
         <Title highlight="Projetos" className="mt-20">
           Todos Meus
         </Title>
-        <RecentProjects showAll={true} />
+        <ProjectsGrid projects={getAllProjects()} />
       </PageTransition>
     </div>
   );
