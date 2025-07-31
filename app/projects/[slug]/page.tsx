@@ -2,13 +2,8 @@ import { notFound } from "next/navigation";
 import { getProjectBySlug } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaGithub,
-  FaExternalLinkAlt,
-  FaArrowLeft,
-  FaTag,
-} from "react-icons/fa";
-import TechnologyCard from "@/components/ui/TechnologyCard";
+import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
+
 import { Button } from "@/components/ui/button";
 import PageTransition from "@/components/animations/PageTransition";
 import Title from "@/components/common/Title";
@@ -27,45 +22,38 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <Button variant="outline" asChild className="mb-8">
             <Link href="/projects" className="gap-2">
               <FaArrowLeft className="w-4 h-4" />
-              Voltar para a galeria de projetos
+              Voltar para a página de projetos
             </Link>
           </Button>
 
           <div className="space-y-6">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
-                <FaTag className="w-3 h-3" />
-                {project.category}
-              </span>
-            </div>
-
             <Title className="mt-8 mb-4" highlight={project.category}>
               {project.title}
             </Title>
 
-            <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed mt-10">
               {project.des ||
                 "Este projeto representa um marco importante na minha trajetória como desenvolvedor, unindo tecnologia e criatividade para resolver desafios reais."}
             </p>
 
             <div className="flex flex-wrap gap-4">
-              {project.demoLink && (
+              {project.link && (
                 <Button asChild>
                   <Link
-                    href={project.demoLink}
+                    href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="gap-2"
                   >
                     <FaExternalLinkAlt className="w-4 h-4" />
-                    Acessar versão online
+                    Acessar
                   </Link>
                 </Button>
               )}
-              {project.githubLink && (
+              {project.github && (
                 <Button variant="outline" asChild>
                   <Link
-                    href={project.githubLink}
+                    href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="gap-2"
@@ -79,7 +67,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
 
-        {/* Imagem principal */}
         <div className="relative mb-12 group">
           <div className="relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden border border-border bg-card">
             <Image
@@ -105,25 +92,25 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                 {project.fullDescription ||
                   "Compartilho aqui os bastidores e motivações deste projeto, mostrando como cada etapa contribuiu para meu crescimento profissional e para entregar valor real aos usuários."}
               </p>
+
+              <h2 className="text-2xl font-bold mb-4">
+                Todas as principais funcionalidades
+              </h2>
+              <ul className="list-disc list-inside">
+                {project.features.map((feature, index) => (
+                  <li
+                    className="text-muted-foreground leading-relaxed"
+                    key={index}
+                  >
+                    {feature}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
           {/* Sidebar */}
           <div className="space-y-6">
-            {/* Tecnologias */}
-            <div className="p-6 rounded-xl bg-card border border-border">
-              <h3 className="text-xl font-bold mb-4">Stack utilizada</h3>
-              <div className="space-y-3">
-                {project.technologies.map((tech, index) => (
-                  <TechnologyCard
-                    key={index}
-                    technology={tech}
-                    variant="compact"
-                  />
-                ))}
-              </div>
-            </div>
-
             {/* Informações do projeto */}
             <div className="p-6 rounded-xl bg-card border border-border">
               <h3 className="text-xl font-bold mb-4">Detalhes do projeto</h3>
@@ -132,7 +119,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   <span className="text-muted-foreground">Status:</span>
                   <span className="font-medium">
                     {project.status === "completed"
-                      ? "Concluído"
+                      ? "Trabalhando"
                       : project.status === "in-progress"
                       ? "Em andamento"
                       : "Planejado"}
