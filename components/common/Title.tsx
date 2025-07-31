@@ -15,7 +15,7 @@ export default function Title({
 }: TitleProps) {
   return (
     <Tag
-      className={`heading bg-gradient-to-b from-[#0e0e0f] to-[#0d0d0d] dark:from-neutral-50 dark:to-neutral-400 bg-clip-text text-transparent ${className}`}
+      className={`heading bg-clip-text text-transparent bg-gradient-to-b from-[#0e0e0f] to-[#0d0d0d] dark:from-neutral-50 dark:to-neutral-400   ${className}`}
     >
       {children}{" "}
       {highlight && (
