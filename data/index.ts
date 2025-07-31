@@ -14,58 +14,69 @@ export interface Project {
   img: string;
   gallery?: string[];
   iconLists: string[];
-  technologies: {
-    name: string;
-    description: string;
-    icon: string;
-  }[];
   features: string[];
   challenges?: string[];
   learnings?: string[];
   demoLink?: string;
-  githubLink?: string;
+  github?: string;
   category: string;
   status: "completed" | "in-progress" | "planned";
   createdAt: string;
   updatedAt?: string;
-  link: string; // Mantido para compatibilidade
+  link: string;
 }
 
 export const recentProjects: Project[] = [
   {
     id: 1,
-    title: "imSafeBank",
-    slug: "imsafebank",
-    des: "Uma landing page de um banco moderno conceitual",
+    title: "Naurial",
+    slug: "naurial",
+    des: "SaaS educacional, onde você pode aprender o que quiser com uma IA Companheira de estudos personalizável.",
     fullDescription:
-      "O imSafeBank é uma landing page conceitual que representa um banco digital moderno e inovador. O projeto foi desenvolvido com foco em design responsivo, experiência do usuário intuitiva e performance otimizada. A interface apresenta seções bem estruturadas incluindo hero section, serviços bancários, depoimentos de clientes e informações sobre segurança financeira.",
+      "O principal problema que o Naurial busca solucionar é a desorganização comum ao se aprender com IAs generativas. Muitas vezes, você aprende algo valioso em um chat, mas, com o tempo, ele se perde entre dezenas de outras conversas. Você acaba criando novos chats, sobrepondo os anteriores e, no fim, está completamente perdido em meio a tanta informação solta.",
     img: "/p1.svg",
-    gallery: ["/p1.svg", "/p1-gallery-1.svg", "/p1-gallery-2.svg"],
-    iconLists: ["/ts.svg", "/react.svg", "/tail.svg", "/vite.svg"],
-    technologies: [
-      {
-        name: "TypeScript",
-        description:
-          "Linguagem principal para tipagem estática e maior segurança no código",
-        icon: "/ts.svg",
-      },
-      {
-        name: "React",
-        description:
-          "Biblioteca para construção da interface de usuário componentizada",
-        icon: "/react.svg",
-      },
-      {
-        name: "Tailwind CSS",
-        description: "Framework CSS para estilização rápida e responsiva",
-        icon: "/tail.svg",
-      },
-      {
-        name: "Vite",
-        description: "Build tool para desenvolvimento rápido e otimizado",
-        icon: "/vite.svg",
-      },
+    iconLists: [
+      "/next.svg",
+      "/react.svg",
+      "/ts.svg",
+      "/tail.svg",
+      "/fm.svg",
+      "/pg.svg",
     ],
+    features: [
+      "Ambiente Organizado e Centralizado: Não é só um chat com IA, mas uma plataforma com navegação, histórico, biblioteca de aulas e acompanhamento de progresso.",
+      "Personalização Total: O usuário pode escolher o nome do(a) professor(a) IA, o tipo de voz, a matéria, o conteúdo e até o tempo de duração da aula.",
+      "Aulas Pré-definidas e Livres: Para iniciantes, há trilhas e aulas sugeridas em ordem lógica. Para avançados, é possível aprender qualquer conteúdo específico, a qualquer momento.",
+      "Conversação em Tempo Real: O core do produto é a interação por voz com a IA, tornando o aprendizado mais natural e dinâmico.",
+      "Conteúdo Multimodal: Além da conversa, o usuário pode visualizar o conteúdo em texto e resolver exercícios.",
+      "Gamificação: Sistema de XP, níveis, badges e recompensas para estimular o engajamento e o progresso.",
+    ],
+    challenges: [
+      "Criar um design que transmitisse confiança e modernidade",
+      "Implementar animações performáticas",
+      "Garantir acessibilidade em todos os componentes",
+    ],
+    learnings: [
+      "Aprofundamento em design de interfaces financeiras",
+      "Técnicas avançadas de animação com CSS",
+      "Otimização de performance em aplicações React",
+    ],
+
+    category: "LMS SaaS",
+    status: "completed",
+    createdAt: "2025/07/30",
+    link: "https://naurial.vercel.app/pt",
+  },
+  {
+    id: 2,
+    title: "Shiny Annotation",
+    slug: "shiny-annotation",
+    des: "Sua plataforma para criar, colaborar e organizar documentos com o poder da IA.",
+    fullDescription:
+      "Shiny Annotation é uma plataforma de anotação de documentos que utiliza a IA para criar, colaborar e organizar documentos de forma eficiente. A plataforma oferece uma interface intuitiva e fácil de usar, permitindo aos usuários criar anotações, marcar texto, adicionar marcadores e muito mais. Além disso, a plataforma permite a colaboração em tempo real, permitindo que vários usuários trabalhem juntos em um mesmo documento.",
+    img: "/p2.svg",
+    gallery: ["/p2.svg", "/p2-gallery-1.svg", "/p2-gallery-2.svg"],
+    iconLists: ["/next.svg", "/react.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
     features: [
       "Design responsivo para todos os dispositivos",
       "Animações suaves e interativas",
@@ -84,67 +95,10 @@ export const recentProjects: Project[] = [
       "Técnicas avançadas de animação com CSS",
       "Otimização de performance em aplicações React",
     ],
-    demoLink: "https://im-safe-bank.vercel.app/",
-    githubLink: "https://github.com/VitorArimatea/im-safe-bank",
-    category: "Landing Page",
-    status: "completed",
-    createdAt: "2024-01-15",
-    link: "https://im-safe-bank.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Weather Now",
-    slug: "weather-now",
-    des: "Website que possibilita a visualização do clima em tempo real",
-    fullDescription:
-      "Weather Now é uma aplicação web que fornece informações meteorológicas em tempo real para qualquer cidade do mundo. O projeto integra APIs de clima para exibir dados precisos incluindo temperatura atual, condições climáticas, umidade, velocidade do vento e previsão para os próximos dias. A interface é limpa e intuitiva, permitindo busca rápida por localização.",
-    img: "/p2.svg",
-    gallery: ["/p2.svg", "/p2-gallery-1.svg", "/p2-gallery-2.svg"],
-    iconLists: ["/js.svg", "/react.svg", "/tail.svg"],
-    technologies: [
-      {
-        name: "JavaScript",
-        description: "Linguagem principal para lógica da aplicação",
-        icon: "/js.svg",
-      },
-      {
-        name: "React",
-        description: "Biblioteca para construção da interface de usuário",
-        icon: "/react.svg",
-      },
-      {
-        name: "Tailwind CSS",
-        description: "Framework CSS para estilização responsiva",
-        icon: "/tail.svg",
-      },
-    ],
-    features: [
-      "Busca por cidade em tempo real",
-      "Exibição de temperatura atual e condições climáticas",
-      "Informações detalhadas: umidade, vento, pressão",
-      "Previsão para 5 dias",
-      "Interface responsiva e intuitiva",
-      "Geolocalização automática",
-      "Histórico de cidades pesquisadas",
-    ],
-    challenges: [
-      "Integração com múltiplas APIs de clima",
-      "Tratamento de erros de conectividade",
-      "Otimização de chamadas à API",
-      "Implementação de geolocalização",
-    ],
-    learnings: [
-      "Integração com APIs externas",
-      "Gerenciamento de estado em React",
-      "Tratamento de dados assíncronos",
-      "Implementação de funcionalidades de geolocalização",
-    ],
-    demoLink: "https://weather-now-demo.vercel.app/",
-    githubLink: "https://github.com/VitorArimatea/weather-now",
     category: "Web App",
     status: "completed",
     createdAt: "2024-02-20",
-    link: "https://github.com/VitorArimatea/weather-now",
+    link: "shinyannotation.vercel.app",
   },
   {
     id: 3,
@@ -156,29 +110,6 @@ export const recentProjects: Project[] = [
     img: "/p3.svg",
     gallery: ["/p3.svg", "/p3-gallery-1.svg", "/p3-gallery-2.svg"],
     iconLists: ["/ts.svg", "/react.svg", "/tail.svg", "/vite.svg"],
-    technologies: [
-      {
-        name: "TypeScript",
-        description:
-          "Linguagem principal para tipagem estática e desenvolvimento seguro",
-        icon: "/ts.svg",
-      },
-      {
-        name: "React",
-        description: "Biblioteca para construção da interface de usuário",
-        icon: "/react.svg",
-      },
-      {
-        name: "Tailwind CSS",
-        description: "Framework CSS para estilização moderna e responsiva",
-        icon: "/tail.svg",
-      },
-      {
-        name: "Vite",
-        description: "Build tool para desenvolvimento otimizado",
-        icon: "/vite.svg",
-      },
-    ],
     features: [
       "Criação de notas por texto e voz",
       "Reconhecimento de voz em tempo real",
@@ -203,7 +134,6 @@ export const recentProjects: Project[] = [
       "Design de interfaces acessíveis",
     ],
     demoLink: "https://notes-taupe-theta.vercel.app/",
-    githubLink: "https://github.com/VitorArimatea/notes-app",
     category: "Productivity App",
     status: "completed",
     createdAt: "2024-03-10",
@@ -230,39 +160,6 @@ export const recentProjects: Project[] = [
       "/tail.svg",
       "/prisma.svg",
       "/mongodb.svg",
-    ],
-    technologies: [
-      {
-        name: "TypeScript",
-        description:
-          "Linguagem principal para tipagem estática em todo o projeto",
-        icon: "/ts.svg",
-      },
-      {
-        name: "React",
-        description: "Biblioteca para construção da interface de usuário",
-        icon: "/react.svg",
-      },
-      {
-        name: "Next.js",
-        description: "Framework React para SSR, roteamento e otimizações",
-        icon: "/next.svg",
-      },
-      {
-        name: "Tailwind CSS",
-        description: "Framework CSS para estilização rápida e consistente",
-        icon: "/tail.svg",
-      },
-      {
-        name: "Prisma",
-        description: "ORM para modelagem e queries do banco de dados",
-        icon: "/prisma.svg",
-      },
-      {
-        name: "MongoDB",
-        description: "Banco de dados NoSQL para armazenamento de dados",
-        icon: "/mongodb.svg",
-      },
     ],
     features: [
       "Sistema completo de autenticação e autorização",
@@ -292,7 +189,6 @@ export const recentProjects: Project[] = [
       "Arquitetura de aplicações escaláveis",
     ],
     demoLink: "https://bustley-social.vercel.app/",
-    githubLink: "https://github.com/VitorArimatea/bustley-social-media",
     category: "Social Network",
     status: "completed",
     createdAt: "2024-04-05",
@@ -312,13 +208,6 @@ export const moreProjects: Project[] = [
     img: "/p6.svg",
     gallery: ["/p6.svg", "/p6-gallery-1.svg", "/p6-gallery-2.svg"],
     iconLists: ["/ts.svg"],
-    technologies: [
-      {
-        name: "TypeScript",
-        description: "Linguagem principal para desenvolvimento Angular",
-        icon: "/ts.svg",
-      },
-    ],
     features: [
       "Sistema de posts e artigos",
       "Categorização por gêneros de jogos",
@@ -338,11 +227,44 @@ export const moreProjects: Project[] = [
       "Arquitetura de aplicações SPA",
       "Gerenciamento de conteúdo dinâmico",
     ],
-    githubLink: "https://github.com/VitorArimatea/blog-games",
     category: "Blog",
     status: "completed",
     createdAt: "2024-06-01",
     link: "https://github.com/VitorArimatea/blog-games",
+  },
+  {
+    id: 6,
+    title: "imSafeBank",
+    slug: "imsafebank",
+    des: "Uma landing page de um banco moderno conceitual",
+    fullDescription:
+      "O imSafeBank é uma landing page conceitual que representa um banco digital moderno e inovador. O projeto foi desenvolvido com foco em design responsivo, experiência do usuário intuitiva e performance otimizada. A interface apresenta seções bem estruturadas incluindo hero section, serviços bancários, depoimentos de clientes e informações sobre segurança financeira.",
+    img: "/p1.svg",
+    gallery: ["/p1.svg", "/p1-gallery-1.svg", "/p1-gallery-2.svg"],
+    iconLists: ["/ts.svg", "/react.svg", "/tail.svg", "/vite.svg"],
+    features: [
+      "Design responsivo para todos os dispositivos",
+      "Animações suaves e interativas",
+      "Seção de serviços bancários detalhada",
+      "Depoimentos de clientes com carousel",
+      "Formulário de contato funcional",
+      "Otimização de performance e SEO",
+    ],
+    challenges: [
+      "Criar um design que transmitisse confiança e modernidade",
+      "Implementar animações performáticas",
+      "Garantir acessibilidade em todos os componentes",
+    ],
+    learnings: [
+      "Aprofundamento em design de interfaces financeiras",
+      "Técnicas avançadas de animação com CSS",
+      "Otimização de performance em aplicações React",
+    ],
+    demoLink: "https://im-safe-bank.vercel.app/",
+    category: "Landing Page",
+    status: "completed",
+    createdAt: "2024-01-15",
+    link: "https://im-safe-bank.vercel.app/",
   },
 ];
 
@@ -426,13 +348,5 @@ export const getProjectBySlug = (slug: string): Project | undefined => {
 export const getProjectsByCategory = (category: string): Project[] => {
   return getAllProjects().filter((project) =>
     project.category.toLowerCase().includes(category.toLowerCase())
-  );
-};
-
-export const getProjectsByTechnology = (technology: string): Project[] => {
-  return getAllProjects().filter((project) =>
-    project.technologies.some((tech) =>
-      tech.name.toLowerCase().includes(technology.toLowerCase())
-    )
   );
 };
