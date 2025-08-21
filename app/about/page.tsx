@@ -35,7 +35,7 @@ const About = () => {
           </div>
           <div className="w-[100dvw] lg:w-[50%] flex flex-col justify-center text-left text-[17.5px] md:text-[20px] mb-4 py-2 px-8">
             <p className="lg:max-w-[28em]">
-              Eu sou um desenvolvedor full-stack com pouco mais de 1 ano de
+              Eu sou um desenvolvedor full-stack com pouco mais de 2 anos de
               experiência, apaixonado em criar soluções inovadoras e escaláveis
               da melhor forma possível. Usando tecnologias como Typescript,
               Next.js, Angular, Node.js, entre outras, eu busco entregar
@@ -44,11 +44,11 @@ const About = () => {
             <br />
 
             <p className="lg:max-w-[28em]">
-              Acredito que a IA não é apenas um hype passageiro, mas uma ferramenta
-              poderosa para aumentar a capacidade humana. Por isso, me
-              especializei em integrar APIs de LLMs como GPT e Gemini para dar
-              &quot;superpoderes&quot; a sistemas, tornando-os mais eficientes e a
-              comunicação com clientes mais natural.
+              Acredito que a IA não é apenas um hype passageiro, mas uma
+              ferramenta poderosa para aumentar a capacidade humana. Por isso,
+              me especializei em integrar APIs de LLMs como GPT e Gemini para
+              dar &quot;superpoderes&quot; a sistemas, tornando-os mais
+              eficientes e a comunicação com clientes mais natural.
             </p>
             <div className="flex gap-3 mt-7">
               {socialMedia.map((info) => (
@@ -65,7 +65,7 @@ const About = () => {
                     alt={info.alt}
                     width={40}
                     height={40}
-                    className="bg-blue-900 rounded-sm p-1.5 dark:bg-transparent"
+                    className="bg-[#0a1128] rounded-sm p-1.5 dark:bg-transparent"
                   />
                 </Link>
               ))}
