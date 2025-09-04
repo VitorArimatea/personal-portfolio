@@ -1,15 +1,16 @@
 <div align="center">
 
-<a href="https://vitorarimatea.com.br">
+<a href="https://vitorarimatea.vercel.app">
   <img src="public/readme/personal-logo.svg" height="96" alt="Logo Pessoal"/>
 </a>
 
 # **Vítor Arimatéa**
-### Desenvolvedor Full Stack
 
-Transformo ideias em **soluções digitais completas**, unindo **Front-End, Back-End e UX** para criar experiências funcionais e envolventes. com total foco em entregar **produtos modernos, performáticos e seguros**.  
+### Software Developer
 
-*No meu portfólio você encontrará os meus principais projetos, habilidades e experiências.*
+**Transformo ideias** em **soluções digitais completas**, com foco em **experiência do usuário**, **arquitetura escalável**, **performance**, **segurança**, **acessibilidade** e **código sustentável**.
+
+_Explore meu portfólio para conhecer meus principais projetos, experiências e habilidades._
 
 </div>
 
@@ -29,29 +30,28 @@ Transformo ideias em **soluções digitais completas**, unindo **Front-End, Back
 
 Meu portfólio foi pensado em ser como uma **vitrine interativa e profissional**, destacando:
 
+- **Projetos:** destacando os mais importantes da minha carreira;
 - **Minha jornada:** um pouco sobre mim e minha experiência;
-- **Projetos reais:** com foco em usabilidade, segurança e escalabilidade;
-- **UI/UX moderna e responsiva:** alinhada às tendências atuais.
+- **Habilidades:** tecnologias que eu utilizo no dia a dia;
 
+## Confira meu Porfólio
 
-
-## Dê uma olhada no meu Portfólio
-
-➡️ **[vitorarimatea.vercel.app](https://vitorarimatea.vercel.app/)**
+👉🏻 **[vitorarimatea.vercel.app](https://vitorarimatea.vercel.app/)**
 
 ---
 
 ## Vamos Conversar?
 
 Se quiser **trocar uma ideia, sugerir melhorias ou contratar meus serviços**:
- 
-- **LinkedIn:** [linkedin.com/in/vitorarimatea](https://linkedin.com/in/vitorarimatea)
+
+**LinkedIn:** [linkedin.com/in/vitorarimatea](https://linkedin.com/in/vitorarimatea)
 
 ---
 
 <div align="center">
 
-### Criado e mantido com muita dedicação por **Vítor Arimatéa**  
+### Criado e mantido com muita dedicação por **Vítor Arimatéa**
+
 _"Sonhe. Crie. Alcance."_
 
 </div>
