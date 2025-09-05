@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  allowedDevOrigins: ["local-origin.dev", "*.local-origin.dev"],
+  allowedDevOrigins: process.env.ALLOWED_DEV_ORIGINS?.split(",") || [],
   // output: 'export',
 };
 
