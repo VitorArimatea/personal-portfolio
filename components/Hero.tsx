@@ -10,7 +10,11 @@ import Title from "./common/Title";
 import TextGenerateEffect from "./ui/TextGenerateEffect";
 import Button from "./ui/AnimatedButton";
 
+import { useTranslations } from "next-intl";
+
 const Hero = () => {
+  const t = useTranslations("Hero");
+
   return (
     <motion.section
       initial="hidden"
@@ -25,7 +29,7 @@ const Hero = () => {
 
       <motion.div variants={itemVariants}>
         <Title
-          highlight="Desenvolvedor Full-Stack"
+          highlight={t("subtitle")}
           as="h1"
           className="text-[35px] sm:text-5xl font-bold text-center"
         >
@@ -36,17 +40,17 @@ const Hero = () => {
       <motion.div variants={itemVariants}>
         <TextGenerateEffect
           className="font-normal tracking-wider text-[18px] sm:text-2xl text-center"
-          words="Eu transformo códigos em experiências únicas e impactantes"
+          words={t("description")}
         />
       </motion.div>
 
       <motion.div variants={itemVariants}>
         <Link href="#projetos-recentes">
           <Button
-            title="Meus Últimos Projetos"
+            title={t("button")}
             icon={<FaLocationArrow />}
             position="right"
-            aria-label="Meus Últimos Projetos"
+            aria-label={t("button")}
           />
         </Link>
       </motion.div>
