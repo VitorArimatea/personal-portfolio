@@ -3,6 +3,7 @@ import styles from "./style.module.scss";
 import { socialMedia } from "@/data";
 import Link from "next/link";
 import Image from "next/image";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 interface SocialMediaItem {
   id: string | number;
@@ -27,6 +28,7 @@ export default function Footer(): React.ReactNode {
             <Image src={info.img} alt={info.alt} width={25} height={25} />
           </Link>
         ))}
+        <LanguageSwitcher />
         <ThemeToggle />
       </div>
     </div>
