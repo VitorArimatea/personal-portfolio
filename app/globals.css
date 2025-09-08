@@ -71,7 +71,7 @@
 
 @layer base {
   :root {
-    --background: #f4f0ed;
+    --background: #efece9;
     --primary: #111;
     --radius: 0.625rem;
     --foreground: oklch(0.141 0.005 285.823);
