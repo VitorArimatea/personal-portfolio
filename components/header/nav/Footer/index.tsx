@@ -15,7 +15,7 @@ interface SocialMediaItem {
 export default function Footer(): React.ReactNode {
   return (
     <div className={styles.footer}>
-      <div className="flex gap-5 md:gap-3 mt-3 md:mt-0">
+      <div className="flex items-center gap-5 md:gap-3 mt-3 md:mt-0">
         {socialMedia.map((info: SocialMediaItem) => (
           <Link
             key={info.id}
