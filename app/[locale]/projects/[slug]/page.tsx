@@ -84,7 +84,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           {/* Conteúdo principal */}
           <div className="lg:col-span-2 space-y-8">
             {/* Descrição completa */}
-            <div className="p-6 rounded-xl bg-card border border-border">
+            <div className="p-6 rounded-xl border border-border">
               <h2 className="text-2xl font-bold mb-4">
                 Por que criei este projeto?
               </h2>
@@ -93,7 +93,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   "Compartilho aqui os bastidores e motivações deste projeto, mostrando como cada etapa contribuiu para meu crescimento profissional e para entregar valor real aos usuários."}
               </p>
 
-              <h2 className="text-2xl font-bold mb-4">
+              <h2 className="text-2xl font-bold mb-4 mt-4">
                 Todas as principais funcionalidades
               </h2>
               <ul className="list-disc list-inside">
@@ -112,7 +112,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Informações do projeto */}
-            <div className="p-6 rounded-xl bg-card border border-border">
+            <div className="p-6 rounded-xl border border-border">
               <h3 className="text-xl font-bold mb-4">Detalhes do projeto</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
