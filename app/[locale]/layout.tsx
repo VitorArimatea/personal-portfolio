@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Vítor Arimatéa",
   description:
-    "Desenvolvedor de software, especializado em TypeScript, Angular, React, Next e Java.",
+    "Desenvolvedor de software, especializado em Next.js, Typescript, Node.js e PostgreSQL",
 };
 
 export default async function RootLayout({
