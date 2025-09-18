@@ -27,7 +27,7 @@ const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
                     className="relative w-full h-full overflow-hidden lg:rounded-xl"
                     style={{ backgroundColor: "#13162D" }}
                   >
-                    <Image src="/bg.svg" alt="Fundo do card de projeto" fill />
+                    <Image src="/effects/bg.svg" alt="Fundo do card de projeto" fill />
                   </div>
                   <Image
                     src={project.img}
@@ -57,10 +57,10 @@ const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
                     {project.iconLists.map((icon, index) => (
                       <div
                         key={index}
-                        className="border border-white/20 rounded-full bg-[#111] w-8 h-8 lg:w-10 lg:h-10 flex justify-center items-center"
+                        className="border border-white/20 rounded-full bg-[#04071D] w-8 h-8 lg:w-10 lg:h-10 flex justify-center items-center"
                         style={{
                           transform: `translateX(-${5 * index + 2}px)`,
-                        }}
+                        }}  
                       >
                         <Image
                           src={icon}

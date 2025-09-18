@@ -26,7 +26,7 @@ const About = () => {
         <main className="flex flex-col lg:flex-row lg:h-[80dvh]">
           <div className="lg:w-[50%] flex flex-col justify-center items-center p-5">
             <Image
-              src="/profile-pic.svg"
+              src="/personal/profile-pic.svg"
               alt="Foto de perfil do Vítor"
               className="lg:mb-0 border-2 border-blue-300 rounded-full z-5 shadow-md shadow-blue-400/30 hover:shadow-xl hover:shadow-blue-400/50 transition-shadow duration-300 ease-in-out"
               height={400}
