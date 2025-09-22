@@ -2,7 +2,7 @@ import Title from "./common/Title";
 import Button from "./ui/AnimatedButton";
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { socialMedia } from "@/data";
+import { socialMedia } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
 

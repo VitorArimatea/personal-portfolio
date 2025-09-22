@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getProjectBySlug } from "@/data";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
@@ -7,6 +7,7 @@ import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import PageTransition from "@/components/animations/PageTransition";
 import Title from "@/components/common/Title";
+import { getProjectBySlug } from "@/lib/actions";
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = getProjectBySlug(params.slug);

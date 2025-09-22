@@ -1,6 +1,6 @@
 import ThemeToggle from "@/components/ThemeToggle";
 import styles from "./style.module.scss";
-import { socialMedia } from "@/data";
+import { socialMedia } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
 import LanguageSwitcher from "@/components/LanguageSwitcher";

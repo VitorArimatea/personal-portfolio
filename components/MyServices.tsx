@@ -2,16 +2,14 @@
 
 import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
 import { GlowingEffect } from "./ui/GlowingEffect";
+import Title from "./common/Title";
 
 export function MyServices() {
   return (
     <div>
-      <h1 className="heading bg-clip-text text-transparent bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50 from-neutral-600 to-neutral-900 py-15">
-        Os meus{" "}
-        <span className="bg-clip-text text-transparent bg-gradient-to-b dark:from-blue-200 dark:to-blue-400 bg-opacity-50 from-blue-500 to-blue-900">
-          Serviços
-        </span>
-      </h1>
+      <Title highlight="Serviços" as={"h2"} className="my-20">
+        Os Meus
+      </Title>
       <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
         <GridItem
           area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"

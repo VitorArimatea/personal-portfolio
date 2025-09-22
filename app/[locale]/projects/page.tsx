@@ -3,7 +3,7 @@ import SpotlightNew from "@/components/ui/SpotlightNew";
 import PageTransition from "@/components/animations/PageTransition";
 import Title from "@/components/common/Title";
 import ProjectsGrid from "@/components/ProjectsGrid";
-import { getAllProjects } from "@/data";
+import { getAllProjects } from "@/lib/actions";
 
 const AllProjects = () => {
   return (

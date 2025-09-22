@@ -12,8 +12,7 @@ import { MyServices } from "@/components/MyServices";
 import MyStack from "@/components/TechStack";
 import Footer from "@/components/Footer";
 
-import { recentProjects } from "@/data";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { recentProjects } from "@/constants";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);

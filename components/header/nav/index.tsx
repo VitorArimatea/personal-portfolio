@@ -6,7 +6,7 @@ import { menuSlide } from "../anim";
 import Link from "./Link";
 import Curve from "./Curve";
 import Footer from "./Footer";
-import { navItems } from "@/data";
+import { navItems } from "@/constants";
 
 export default function Nav() {
   const pathname = usePathname();

@@ -8,7 +8,7 @@ import Title from "@/components/common/Title";
 import Image from "next/image";
 import Link from "next/link";
 
-import { socialMedia } from "@/data";
+import { socialMedia } from "@/constants";
 
 const About = () => {
   return (

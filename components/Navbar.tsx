@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
-import { navItems } from "@/data";
+import { navItems } from "@/constants";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -79,7 +79,7 @@ const Navbar = () => {
                   className="text-3xl text-left font-semibold hover:text-blue-900 dark:hover:text-blue-300 transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
-                  {item.name}
+                  {item.title}
                 </Link>
               </motion.nav>
             ))}

@@ -4,11 +4,12 @@ import Image from "next/image";
 import { PinContainer } from "./ui/PinContainer";
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { Project } from "@/data";
+
 import { cn } from "@/lib/utils";
+import { Projects } from "@/types";
 
 interface ProjectsGridProps {
-  projects: Project[];
+  projects: Projects[];
 }
 
 const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
@@ -27,7 +28,11 @@ const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
                     className="relative w-full h-full overflow-hidden lg:rounded-xl"
                     style={{ backgroundColor: "#13162D" }}
                   >
-                    <Image src="/effects/bg.svg" alt="Fundo do card de projeto" fill />
+                    <Image
+                      src="/effects/bg.svg"
+                      alt="Fundo do card de projeto"
+                      fill
+                    />
                   </div>
                   <Image
                     src={project.img}
@@ -60,7 +65,7 @@ const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
                         className="border border-white/20 rounded-full bg-[#04071D] w-8 h-8 lg:w-10 lg:h-10 flex justify-center items-center"
                         style={{
                           transform: `translateX(-${5 * index + 2}px)`,
-                        }}  
+                        }}
                       >
                         <Image
                           src={icon}
