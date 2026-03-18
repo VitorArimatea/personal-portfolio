@@ -9,8 +9,11 @@ import PageTransition from "@/components/animations/PageTransition";
 import Title from "@/components/common/Title";
 import { getProjectBySlug } from "@/lib/actions";
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = getProjectBySlug(params.slug);
+export default async function ProjectPage(props: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await props.params;
+  const project = await getProjectBySlug(slug);
 
   if (!project) {
     notFound();
@@ -122,8 +125,8 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                     {project.status === "completed"
                       ? "Trabalhando"
                       : project.status === "in-progress"
-                      ? "Em andamento"
-                      : "Planejado"}
+                        ? "Em andamento"
+                        : "Planejado"}
                   </span>
                 </div>
                 <div className="flex justify-between">
