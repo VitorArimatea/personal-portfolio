@@ -1,12 +1,12 @@
 <div align="center">
 
 <a href="https://vitorarimatea.vercel.app">
-  <img src="public/readme/personal-logo.svg" height="96" alt="Logo Pessoal"/>
+  <img src="public/readme/personal-logo.svg" height="96" alt="Logo Vítor Arimatéa"/>
 </a>
 
-# **Vítor Arimatéa**
+# Vítor Arimatéa
 
-### Software Developer
+### Software Engineer
 
 **Transformo ideias** em **soluções digitais completas**, com foco em **experiência do usuário**, **arquitetura escalável**, **performance**, **segurança**, **acessibilidade** e **código sustentável**.
 
