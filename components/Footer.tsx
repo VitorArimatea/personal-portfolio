@@ -30,7 +30,7 @@ const Footer = () => {
 
       <div className="flex mt-10 md:mt-15 flex-col-reverse md:flex-row justify-between items-center">
         <span className="text-[12px] md:text-base mt-10 md:mt-0">
-          Copyright © 2025 Vítor Arimatéa - Todos os direitos reservados.
+          Copyright © 2026 Vítor Arimatéa - Todos os direitos reservados.
         </span>
 
         <div className="flex gap-5 md:gap-3 mt-3 md:mt-0">
